@@ -1,0 +1,51 @@
+
+@media (min-width:768px){
+    //navBar
+    .navBarContainer {
+        height: 100px;
+        width: 100%;
+        @include flex-box(row, center, space-between);
+        padding-left: $padding-border;
+        padding-right: $padding-border;
+        .logo {
+          width: 5vw;
+        }
+        .cross {
+            display: none;
+        }
+        .navBarLinks {
+          @include flex-box(row, center, center);
+          list-style: none;
+          li {
+            color: $menu-font-color;
+            margin-left: $margin-links-menu;
+            margin-right: $margin-links-menu;
+            margin-top: none;
+            margin-bottom: 1.5rem;
+            font-size: $font-menu-desktop;
+            border-bottom: 3px solid $line-color;
+            padding-bottom: 0.5rem;
+          }
+        }
+      }
+
+      //burguer
+        .burguer {
+            display: none;
+        }
+        .crossButton {
+            display: none;
+        }
+}
+
+@media (max-width:768px){
+    //navBar
+    .navBarLinks {
+        width: 100%;
+        padding-right: 2rem;
+        li {
+            padding-bottom: 0.4rem;
+            padding-left:0.8rem;
+        }
+    }
+}

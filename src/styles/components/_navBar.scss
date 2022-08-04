@@ -1,0 +1,28 @@
+.navBarContainer {
+  width: 80%;
+  height: 100vh;
+  background-color: $menu-bg;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  @include flex-box(column, center,center);
+  .logo {
+    width: 35vw;
+  }
+  .navBarLinks {
+    @include flex-box(column, none, center);
+    list-style: none;
+    li {
+      color: $menu-font-color;
+      margin-top: 3rem;
+      margin-top: 3rem;
+      font-size: $font-menu-mobile;
+      border-bottom: 2px solid $line-color;
+    }
+  }
+}
+
+.hide {
+  display: none;
+}
