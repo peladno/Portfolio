@@ -5,4 +5,10 @@
 @import './components/footer';
 @import './components/burguer';
 @import './components/close';
+@import './components/home';
+@import './components/index';
 @import './base/mediaQueries';
+
+body{
+    background-color: $primary-background;
+}

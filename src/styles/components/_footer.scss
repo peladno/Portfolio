@@ -19,7 +19,7 @@
         .socialMedia {
             padding-left: 1rem;
             width:100%;
-            border-top: 0.3rem solid $line-color;
+            border-top: 0.1rem solid $line-color;
             @include flex-box(row, flex-end, flex-end);
             li{
                 padding-left:.5rem;

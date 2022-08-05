@@ -3,6 +3,7 @@ import logo from "../../assets/images/logo.svg";
 import Burguer from "../buttons/Burguer";
 import useToggle from "../../customHooks/useToggle";
 import Close from "../buttons/Close";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   const [value, toggleValue] = useToggle(false);
@@ -14,11 +15,11 @@ function NavBar() {
         <Close toggleValue={toggleValue}/>
         <img className="logo" src={logo} alt="logo" />
         <ul className="navBarLinks">
-          <li>Home</li>
-          <li>Experience</li>
-          <li>Skills</li>
-          <li>Porfolio</li>
-          <li>Contact</li>
+          <li><Link to="/index/home">Home</Link></li>
+          <li><Link to="/index/experience">Experience</Link></li>
+          <li><Link to="/index/skills">Skills</Link></li>
+          <li><Link to="/index/portfolio">Portfolio</Link></li>
+          <li><Link to="/index/contact">Contact</Link></li>
         </ul>
       </nav>
     </>
