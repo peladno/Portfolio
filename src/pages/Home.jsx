@@ -1,8 +1,9 @@
 import React from 'react'
+import ProfilePicture from '../components/profilePicture/ProfilePicture'
 
 function Home() {
   return (
-    <div>home</div>
+    <div className='homeContainer'><ProfilePicture/></div>
   )
 }
 

@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
 
-function Button({children}) {
+function Button({ children }) {
   return (
     <>
-    <button>{children}</button>
+      <button className="mainButton">
+        {children}
+      </button>
     </>
-  )
+  );
 }
 
-export default Button
+export default Button;

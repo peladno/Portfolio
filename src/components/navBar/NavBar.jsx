@@ -10,16 +10,26 @@ function NavBar() {
 
   return (
     <>
-    <Burguer toggleValue={toggleValue} />
-      <nav className={`navBarContainer ${value? '' : 'hide'}`}>
-        <Close toggleValue={toggleValue}/>
+      <Burguer toggleValue={toggleValue} />
+      <nav className={`navBarContainer ${value ? "" : "hide"}`}>
+        <Close toggleValue={toggleValue} />
         <img className="logo" src={logo} alt="logo" />
         <ul className="navBarLinks">
-          <li><Link to="/index/home">Home</Link></li>
-          <li><Link to="/index/experience">Experience</Link></li>
-          <li><Link to="/index/skills">Skills</Link></li>
-          <li><Link to="/index/portfolio">Portfolio</Link></li>
-          <li><Link to="/index/contact">Contact</Link></li>
+          <li>
+            <Link to="/home">Home</Link>
+          </li>
+          <li>
+            <Link to="/experience">Experience</Link>
+          </li>
+          <li>
+            <Link to="/skills">Skills</Link>
+          </li>
+          <li>
+            <Link to="/portfolio">Portfolio</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
         </ul>
       </nav>
     </>

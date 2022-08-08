@@ -1,0 +1,34 @@
+.pictureContainer {
+  width: 100vw;
+  background-color: $secondary-background;
+  height: 45vh;
+  @include flex-box(column, center, center);
+  img {
+    width: 50%;
+    border-radius: 60%;
+    outline:6px solid black;
+    z-index: 2;
+  }
+  div{
+    @include flex-box(row, center, center);
+    position: relative;
+    left: -20px;
+  }
+  div::before {
+    content: "こんにちは 世界の皆さん";
+    text-shadow: $title-shadow 6px 2px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    color: $normal;
+    font-size: 2.5rem;
+    height: 15rem;
+    font-weight: bold;
+    background-color: $primary-background;
+    padding: 0.3rem 0.8rem 0.3rem 0rem;
+    border-radius: 0.5rem;
+    border: 5px solid $secondary;
+    position: relative;
+    right: -0.9rem;
+    z-index: 1;
+  }
+}

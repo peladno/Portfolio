@@ -1,0 +1,29 @@
+/* From uiverse.io by @hritik5102 */
+.mainButton {
+  position: relative;
+  height: 40px;
+  padding: 0.5rem 2.5rem;
+  border: 1px solid $button-bg2;
+  background-color: $button-bg2;
+  border-radius: 5px;
+  cursor: grab;
+}
+
+.mainButton:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 7px;
+  left: -7px;
+  height: 100%;
+  background-color: transparent;
+  border: 1px solid $button-bg2;
+  z-index: 2;
+  transition: all 0.35s;
+  border-radius: inherit;
+}
+
+.mainButton:hover:after {
+  top: 0px;
+  left: 0px;
+}

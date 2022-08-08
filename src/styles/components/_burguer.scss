@@ -1,4 +1,10 @@
 .burguerDiv {
     margin: 1rem;
+    position:absolute;
+    z-index: 3;
+    right: 0;
   @include flex-box(row, center, flex-end);
+  .burguer {
+    background-color: $secondary-background;
+  }
 }

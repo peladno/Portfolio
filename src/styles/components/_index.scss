@@ -1,0 +1,12 @@
+.indexMain {
+    background-image: url("../../assets/images/ep_naturalwhite.png");
+    background-repeat: repeat;
+    background-color: $home-bg;
+    height: 100vh;
+    @include flex-box(column, center, center);
+    
+    img{
+        width: 50vw;
+        margin-bottom: 2rem;
+    }
+}
