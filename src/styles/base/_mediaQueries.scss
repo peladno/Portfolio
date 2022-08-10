@@ -1,4 +1,7 @@
 @media (min-width: 768px) {
+  body {
+    overflow: hidden;
+  }
   //navBar
   .navBarContainer {
     height: 100px;
@@ -28,7 +31,13 @@
       }
     }
   }
-
+  //footer 
+  .footerContainer {
+    height: 10vh;
+    .footerLinks {
+      display: none;
+    }
+  }
   //burguer
   .burguerDiv {
     display: none;
@@ -37,6 +46,7 @@
     display: none;
   }
   .footerContainer {
+    height: 20vh;
     .footerContent {
       padding-left: $padding-border;
       padding-right: $padding-border;
@@ -52,6 +62,34 @@
         }
       }
     }
+  }
+
+  //index {
+    .indexMain {
+      img{
+        width: 20vw;
+      }
+    }
+
+  //home 
+  .homeContainer {
+    @include flex-box(row, center, center);
+  }
+  .pictureContainer{
+    height: 75vh;
+    img{
+      width: 45%;
+    }
+    div::before {
+      height: 25rem;
+      font-size: 4rem;
+    }
+  }
+
+  .aboutContainer{
+    width: 100%;
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 }
 

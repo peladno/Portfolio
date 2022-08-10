@@ -1,8 +1,6 @@
 .footerContainer {
-    height:auto;
     width: 100%;
     background-color: $footer;
-    border-top: 2px solid black;
     .footerContent{
         @include flex-box(column, flex-start, space-between);
         padding-left: 1rem;

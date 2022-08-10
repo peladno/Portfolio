@@ -1,10 +1,16 @@
-import React from 'react'
-import ProfilePicture from '../components/profilePicture/ProfilePicture'
+import React from "react";
+import About from "../components/about/About";
+import ProfilePicture from "../components/profilePicture/ProfilePicture";
+
+
 
 function Home() {
   return (
-    <div className='homeContainer'><ProfilePicture/></div>
-  )
+    <div className="homeContainer">
+      <ProfilePicture />
+      <About/>
+    </div>
+  );
 }
 
-export default Home
+export default Home;
