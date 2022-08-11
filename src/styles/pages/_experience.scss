@@ -1,0 +1,22 @@
+.experienceMain {
+  min-height: $desktop-height;
+  background-image: url(/src/assets/images/daruma.svg);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 30%;
+  .experienceContainer {
+    min-height: 65vh;
+    @include flex-box(column, center, center);
+    h2 {
+      font-size: $font-title2;
+      color: $title-color;
+    }
+    p {
+      font-size: $font-text;
+      color: $normal;
+      line-height: 22px;
+      text-align: justify;
+      margin: 3rem;
+    }
+  }
+}

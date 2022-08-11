@@ -1,0 +1,16 @@
+.title {
+  @include flex-box(column, flex-start, center);
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+  padding-left: $padding-mobile;
+  background-image: url("/src/assets/images/mountFuji.svg");
+  background-repeat: no-repeat;
+  background-color: $secondary-background;
+  h1 {
+    font-size: $font-title;
+    color: $title-color;
+    padding-bottom: 0.5rem;
+    padding-right: 2rem;
+    border-bottom: 0.3rem solid $line-color;
+  }
+}

@@ -18,11 +18,15 @@ $line-color: rgba(237, 60, 31, 1);
 //padding and margins sizes
 $padding-border: 5rem;
 $margin-links-menu: 1.5rem;
+$padding-mobile: 1rem;
 
 //fonts size
 $font-menu-mobile: 1.6rem;
 $font-menu-desktop: 1.2rem;
 $font-menu-footer:1.1rem;
-$font-title: 2rem;
-$font-title2: 1.5rem;
+$font-title: calc(2rem + .8vw);
+$font-title2: calc(1.5rem + .8vw);
 $font-text: 1.2rem;
+
+//height 
+$desktop-height:75vh;

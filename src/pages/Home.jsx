@@ -9,6 +9,7 @@ function Home() {
     <div className="homeContainer">
       <ProfilePicture />
       <About/>
+
     </div>
   );
 }

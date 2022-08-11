@@ -3,9 +3,9 @@
     background-color: $footer;
     .footerContent{
         @include flex-box(column, flex-start, space-between);
-        padding-left: 1rem;
-        padding-right: 1rem;
-        padding-top: 1rem;
+        padding-right: $padding-mobile;
+        padding-left: $padding-mobile;
+        padding-top: $padding-mobile;
         ul{
             li{
                 color: $menu-font-color;

@@ -74,15 +74,16 @@
   //home 
   .homeContainer {
     @include flex-box(row, center, center);
+    background-size: 15%;
   }
   .pictureContainer{
-    height: 75vh;
+    height: $desktop-height;
     img{
       width: 45%;
     }
     div::before {
-      height: 25rem;
       font-size: 4rem;
+      height: 25rem;
     }
   }
 
@@ -90,6 +91,24 @@
     width: 100%;
     padding-left: 6rem;
     padding-right: 6rem;
+  }
+
+  //title
+  .title{
+    @include flex-box(column, center, center);
+    width: 18%;
+    background-color: transparent;
+    padding-bottom: 0;
+    margin-top: 1.5rem;
+  }
+
+  //experience
+  .experienceMain{
+    @include flex-box(column, center, center);
+    background-size: 15%;
+    .experienceContainer{
+      min-height: 60vh;
+    }
   }
 }
 
