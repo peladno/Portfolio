@@ -53,7 +53,7 @@ export const skills = [
   },
   {
     name: "NodeJS",
-    img: "https://firebasestorage.googleapis.com/v0/b/portfoliojavierperez.appspot.com/o/iconsSVG%2FVector.svg?alt=media&token=609a6f4f-dd9f-4ee4-8d9b-9067ad071f38",
+    img: "https://firebasestorage.googleapis.com/v0/b/portfoliojavierperez.appspot.com/o/iconsSVG%2FVector.svg?alt=media&token=6f4d847d-f371-411f-a3a6-acffe972e81d",
   },
   {
     name: "Express",

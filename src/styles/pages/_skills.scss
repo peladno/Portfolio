@@ -1,0 +1,13 @@
+.skillsMain {
+  .skillsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 0.5fr));
+    div {
+      @include flex-box(column, center, center);
+      padding: 2rem;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
