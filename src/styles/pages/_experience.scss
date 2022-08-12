@@ -9,11 +9,11 @@
     @include flex-box(column, center, center);
     h2 {
       font-size: $font-title2;
-      color: $title-color;
+      color: $primary;
     }
     p {
       font-size: $font-text;
-      color: $normal;
+      color: $color-font;
       line-height: 22px;
       text-align: justify;
       margin: 3rem;

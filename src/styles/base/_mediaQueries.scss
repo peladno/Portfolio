@@ -20,13 +20,13 @@
       @include flex-box(row, center, center);
       list-style: none;
       li {
-        color: $menu-font-color;
+        color: $tertiary;
         margin-left: $margin-links-menu;
         margin-right: $margin-links-menu;
         margin-top: none;
         margin-bottom: 1.5rem;
         font-size: $font-menu-desktop;
-        border-bottom: 3px solid $line-color;
+        border-bottom: 3px solid $secondary;
         padding-bottom: 0.5rem;
       }
     }

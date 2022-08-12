@@ -4,17 +4,17 @@
     margin-bottom: 2rem;
     h1 {
       font-size: $font-title;
-      color: $title-color;
+      color: $primary;
       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
       margin-bottom: 1rem;
       padding-bottom: 0.3rem;
       padding-right: 3rem;
-      border-bottom: 3px solid $line-color;
+      border-bottom: 3px solid $secondary;
       display: inline-block;
     }
     p {
       font-size: $font-text;
-      color: $normal;
+      color: $color-font;
       line-height: 22px;
       text-align: justify;
     }
@@ -24,12 +24,12 @@
     @include flex-box(column, center, center);
     h2 {
       font-size: $font-title2;
-      color: $title-color;
+      color: $primary;
       margin-bottom: 1rem;
       padding-left: 1rem;
       padding-right: 1rem;
       padding-bottom: 0.3rem;
-      border-bottom: 3px solid $line-color;
+      border-bottom: 3px solid $secondary;
       display: inline-block;
       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
     }
@@ -37,17 +37,17 @@
         margin-bottom: 1rem;
       li {
         font-size: $font-text;
-        color: $normal;
+        color: $color-font;
         margin-bottom: 0.5rem;
         list-style-type: circle;
       }
     }
     .mainButton {
-        background-color: $button-bg1;
-        color: $button-bg2;
+        background-color: $secondary;
+        color: $tertiary;
       }
     .mainButton::after{
-        border: 1px solid $normal;
+        border: 1px solid $color-font;
     }
   }
 }

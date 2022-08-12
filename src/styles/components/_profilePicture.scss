@@ -1,6 +1,6 @@
 .pictureContainer {
   width: 100vw;
-  background-color: $secondary-background;
+  background-color: $quaternary;
   height: 45vh;
   @include flex-box(column, center, center);
   img {
@@ -19,11 +19,11 @@
     text-shadow: $title-shadow 6px 2px;
     writing-mode: vertical-rl;
     text-orientation: upright;
-    color: $normal;
+    color: $color-font;
     font-size: 2.5rem;
     height: 15rem;
     font-weight: bold;
-    background-color: $primary-background;
+    background-color: $tertiary;
     padding: 0.3rem 0.8rem 0.3rem 0rem;
     border-radius: 0.5rem;
     border: 5px solid $secondary;

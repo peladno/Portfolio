@@ -1,6 +1,6 @@
 .footerContainer {
     width: 100%;
-    background-color: $footer;
+    background-color: $primary;
     .footerContent{
         @include flex-box(column, flex-start, space-between);
         padding-right: $padding-mobile;
@@ -8,7 +8,7 @@
         padding-top: $padding-mobile;
         ul{
             li{
-                color: $menu-font-color;
+                color: $tertiary;
                 font-size: $font-menu-footer;
                 padding-top: 0.1rem;
                 padding-bottom: 0.1rem;
@@ -17,7 +17,7 @@
         .socialMedia {
             padding-left: 1rem;
             width:100%;
-            border-top: 0.1rem solid $line-color;
+            border-top: 0.1rem solid $secondary;
             @include flex-box(row, flex-end, flex-end);
             li{
                 padding-left:.5rem;

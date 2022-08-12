@@ -5,12 +5,12 @@
   padding-left: $padding-mobile;
   background-image: url("/src/assets/images/mountFuji.svg");
   background-repeat: no-repeat;
-  background-color: $secondary-background;
+  background-color: $quaternary;
   h1 {
     font-size: $font-title;
-    color: $title-color;
+    color: $primary;
     padding-bottom: 0.5rem;
     padding-right: 2rem;
-    border-bottom: 0.3rem solid $line-color;
+    border-bottom: 0.3rem solid $secondary;
   }
 }

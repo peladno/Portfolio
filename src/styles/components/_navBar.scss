@@ -1,7 +1,7 @@
 .navBarContainer {
   width: 80%;
   height: 100vh;
-  background-color: $menu-bg;
+  background-color: $primary;
   position: absolute;
   z-index: 100;
   top: 0;
@@ -14,11 +14,11 @@
     @include flex-box(column, none, center);
     list-style: none;
     li {
-      color: $menu-font-color;
+      color: $tertiary;
       margin-top: 3rem;
       margin-top: 3rem;
       font-size: $font-menu-mobile;
-      border-bottom: 2px solid $line-color;
+      border-bottom: 2px solid $secondary;
     }
   }
 }

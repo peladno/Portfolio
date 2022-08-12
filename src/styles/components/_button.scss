@@ -3,8 +3,8 @@
   position: relative;
   height: 40px;
   padding: 0.5rem 2.5rem;
-  border: 1px solid $button-bg2;
-  background-color: $button-bg2;
+  border: 1px solid $tertiary;
+  background-color: $tertiary;
   border-radius: 5px;
   cursor: grab;
 }
@@ -17,7 +17,7 @@
   left: -7px;
   height: 100%;
   background-color: transparent;
-  border: 1px solid $button-bg2;
+  border: 1px solid $tertiary;
   z-index: 2;
   transition: all 0.35s;
   border-radius: inherit;
