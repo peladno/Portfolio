@@ -1,7 +1,6 @@
-import React from "react";
 import github from "../../assets/images/github.svg";
 import linkedin from "../../assets/images/linkedin.svg";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (

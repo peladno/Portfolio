@@ -1,11 +1,7 @@
-import React from "react";
-
 function Button({ children }) {
   return (
     <>
-      <button className="mainButton">
-        {children}
-      </button>
+      <button className="mainButton">{children}</button>
     </>
   );
 }
