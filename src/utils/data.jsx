@@ -4,33 +4,33 @@ export const portfolio = [
     name: "Club Arduino",
     description:
       "First project made for my class of web development. Simple static website for a existing club",
-    skills: ["HTML, Bootstrap, CSS, Sass"],
+    skills: ["HTML", "Bootstrap", "CSS", "Sass"],
   },
   {
     id: 2,
     name: "Recipe generator",
     description:
       "Second project, for my class of JavaScript, Using almost all Vanilla JS and a bit of Bootstrap",
-    skills: ["HTML, CSS, Sass, Vanilla JS, Bootstrap"],
+    skills: ["HTML", "CSS", "Sass", "JavaScript", "Bootstrap"],
   },
   {
     id: 3,
     name: "E-commerce",
     description:
       "Third project for my class of React JS, using Firebase as a database (just to alocate products infomation)",
-    skills: ["HTML, CSS, React JS, Firebase, MaterialUI"],
+    skills: ["HTML", "CSS", "React", "Firebase", "MaterialUI"],
   },
   {
     id: 4,
     name: "BackEnd challenges",
     description: "All the challenges I made for my class of BackEnd",
-    skills: ["HTML, CSS, NodeJS, ExpressJS, MongoDB, SQL, EJS"],
+    skills: ["HTML", "CSS", "NodeJS", "Express", "MongoDB", "MySQL", "EJS"],
   },
   {
     id: 5,
     name: "Portfolio",
     description: "This portfolio",
-    skills: ["HTML, CSS, Sass, React JS, Firebase"],
+    skills: ["HTML", "CSS", "Sass", "React", "Firebase"],
   },
 ];
 
