@@ -23,7 +23,7 @@ function About() {
           <li>Lorem ipsum dolor sit amet.</li>
           <li>Lorem ipsum dolor sit amet.</li>
         </ul>
-        <Button>Download CV</Button>
+        <Button type="button" buttonStyle="btn--primary" buttonSize="btn--large">Download CV</Button>
       </div>
     </div>
   );

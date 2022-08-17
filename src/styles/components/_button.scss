@@ -2,9 +2,6 @@
 .mainButton {
   position: relative;
   height: 40px;
-  padding: 0.5rem 2.5rem;
-  border: 1px solid $tertiary;
-  background-color: $tertiary;
   border-radius: 5px;
   cursor: grab;
 }
@@ -17,7 +14,6 @@
   left: -7px;
   height: 100%;
   background-color: transparent;
-  border: 1px solid $tertiary;
   z-index: 2;
   transition: all 0.35s;
   border-radius: inherit;
@@ -26,4 +22,32 @@
 .mainButton:hover:after {
   top: 0px;
   left: 0px;
+}
+
+.btn--index {
+  background-color: $tertiary;
+  border: 1px solid $tertiary;
+  &::after {
+    border: 1px solid $tertiary;
+  }
+}
+
+.btn--primary {
+  background-color: $secondary;
+  color: $tertiary;
+  &::after {
+    border: 1px solid $color-font;
+  }
+}
+
+.btn--small{
+  width: 1.5rem;
+}
+
+.btn--medium{
+  width: 7rem;
+}
+
+.btn--large{
+  width: 10rem;
 }

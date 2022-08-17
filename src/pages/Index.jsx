@@ -8,11 +8,11 @@ function Index() {
       <main className="indexMain">
         <img src={indexLogo} alt="" />
         <Link to="/home">
-          <Button>Enter</Button>
+          <Button type="button" buttonStyle="btn--index" buttonSize="btn--medium">Enter</Button>
         </Link>
       </main>
     </>
   );
-}
+  }
 
 export default Index;

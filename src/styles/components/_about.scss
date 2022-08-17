@@ -42,12 +42,6 @@
         list-style-type: circle;
       }
     }
-    .mainButton {
-        background-color: $secondary;
-        color: $tertiary;
-      }
-    .mainButton::after{
-        border: 1px solid $color-font;
-    }
+   
   }
 }
