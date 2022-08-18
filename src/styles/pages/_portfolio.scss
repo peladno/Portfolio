@@ -1,0 +1,36 @@
+.divPortfolio {
+    width:100vw;
+    padding: 2rem;
+    @include flex-box(column, center, center);
+    h2 {
+        font-size: $font-title2;
+        color: $primary;
+    }
+    .portfolioImg {
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: .5rem;
+        border: 4px solid $color-font;
+        border-radius: 5px;
+
+    }
+    .imgSkills{
+        width:100%;
+    
+        @include flex-box(row, center, flex-start);
+        img{
+            width: 10vw;
+            padding-right: .5rem;
+        }
+    }
+    p {
+        padding-top: .5rem;
+        padding-bottom: 1rem;
+        text-align: justify;
+    }
+    .divButtons {
+        width: 100%;
+        @include flex-box(row, center, space-around);
+    }
+
+}

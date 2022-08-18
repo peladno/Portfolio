@@ -5,6 +5,7 @@ export const portfolio = [
     description:
       "First project made for my class of web development. Simple static website for a existing club",
     skills: ["HTML", "Bootstrap", "CSS", "Sass"],
+    img: "https://firebasestorage.googleapis.com/v0/b/portfoliojavierperez.appspot.com/o/portfolioImages%2Fclubarduino.png?alt=media&token=0aa4eb7b-fba2-4384-ab85-5bfb0dd1faa9"
   },
   {
     id: 2,
@@ -12,6 +13,7 @@ export const portfolio = [
     description:
       "Second project, for my class of JavaScript, Using almost all Vanilla JS and a bit of Bootstrap",
     skills: ["HTML", "CSS", "Sass", "JavaScript", "Bootstrap"],
+    img: "https://firebasestorage.googleapis.com/v0/b/portfoliojavierperez.appspot.com/o/portfolioImages%2Frecipes.png?alt=media&token=0b250f19-25c8-42b8-8f18-8726cdc56625"
   },
   {
     id: 3,
@@ -19,18 +21,21 @@ export const portfolio = [
     description:
       "Third project for my class of React JS, using Firebase as a database (just to alocate products infomation)",
     skills: ["HTML", "CSS", "React", "Firebase", "MaterialUI"],
+    img: "https://firebasestorage.googleapis.com/v0/b/portfoliojavierperez.appspot.com/o/portfolioImages%2Feshop.png?alt=media&token=e9d9b764-d9dd-4da5-88fb-f03ad4c1d2f9"
   },
   {
     id: 4,
     name: "BackEnd challenges",
     description: "All the challenges I made for my class of BackEnd",
     skills: ["HTML", "CSS", "NodeJS", "Express", "MongoDB", "MySQL", "EJS"],
+    img: ""
   },
   {
     id: 5,
     name: "Portfolio",
     description: "This portfolio",
     skills: ["HTML", "CSS", "Sass", "React", "Firebase"],
+    img:"https://firebasestorage.googleapis.com/v0/b/portfoliojavierperez.appspot.com/o/portfolioImages%2FCaptura%20desde%202022-08-18%2001-01-32.png?alt=media&token=8955b3d8-d30a-43a9-9570-9ad51f133a93"
   },
 ];
 

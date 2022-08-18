@@ -1,20 +1,52 @@
+import Button from "../components/buttons/Button";
+import Title from "../components/title/Title";
 import { skills, portfolio } from "../utils/data";
 
 const portfolioItems = portfolio.map((item) => (
-  <div key={item.id}>
+  <div className="divPortfolio" key={item.id}>
     <h2>{item.name}</h2>
-    <p>{item.description}</p>
-    <ul>
+    <img className="portfolioImg" src={item.img} alt={item.name} />
+    <ul className="imgSkills">
       {item.skills.map((skill) => {
         const findSkills = skills.find((element) => element.name == skill);
-        return <li key={findSkills.name}><img src={findSkills.img} alt={findSkills.name}/></li>;
+        return (
+          <li key={findSkills.name}>
+            <img src={findSkills.img} alt={findSkills.name} />
+          </li>
+        );
       })}
     </ul>
+    <p>{item.description}</p>
+    <div className="divButtons">
+      <a href="">
+        <Button
+          type="button"
+          buttonStyle="btn--primary"
+          buttonSize="btn--medium"
+        >
+          Github
+        </Button>
+      </a>
+      <a href="">
+        <Button
+          type="button"
+          buttonStyle="btn--primary"
+          buttonSize="btn--medium"
+        >
+          Web
+        </Button>
+      </a>
+    </div>
   </div>
 ));
 
 function Portfolio() {
-  return <main>{portfolioItems}</main>;
+  return (
+    <main className="mainPortfolio">
+      <Title>Portfolio</Title>
+      {portfolioItems}
+    </main>
+  );
 }
 
 export default Portfolio;
