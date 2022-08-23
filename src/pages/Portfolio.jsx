@@ -44,7 +44,7 @@ function Portfolio() {
   return (
     <main className="mainPortfolio">
       <Title>Portfolio</Title>
-      {portfolioItems}
+      <div className="portfolioContainer">{portfolioItems}</div>
     </main>
   );
 }

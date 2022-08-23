@@ -100,7 +100,7 @@
     background-color: transparent;
     padding-bottom: 0;
     margin-top: 1.5rem;
-    h1{
+    h1 {
       width: 100%;
     }
   }
@@ -122,12 +122,38 @@
     .skillsContainer {
       grid-template-columns: repeat(auto-fit, minmax(170px, 0.5fr));
       width: 100%;
-      img{
+      img {
         filter: grayscale(100%);
         &:hover {
-          transition: transform .4s;
+          transition: transform 0.4s;
           transform: scale(1.2);
           filter: none;
+        }
+      }
+    }
+  }
+
+  .mainPortfolio {
+    padding-left: $padding-border;
+    padding-right: $padding-border;
+    min-height: 75vh;
+    @include flex-box(column, center, space-between);
+    .portfolioContainer {
+      display: flex;
+      .divPortfolio {
+        width: auto;
+        height: 60vh;
+        padding: 1rem;
+        h2 {
+          font-size: 1.5rem;
+        }
+        .portfolioImg {
+          width: 100%;
+        }
+        .imgSkills {
+          img {
+            width: 2vw;
+          }
         }
       }
     }
