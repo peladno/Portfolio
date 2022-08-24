@@ -19,5 +19,6 @@
 @import './base/mediaQueries';
 
 body{
+    background-image: $wallpaper;
     background-color: $tertiary;
 }

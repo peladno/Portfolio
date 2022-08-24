@@ -1,7 +1,7 @@
 .indexMain {
-    background-image: url("../../assets/images/ep_naturalwhite.png");
-    background-repeat: repeat;
     background-color: $secondary;
+    background-image: $wallpaper;
+    background-repeat: repeat;
     height: 100vh;
     @include flex-box(column, center, center);
     

@@ -12,7 +12,9 @@ function NavBar() {
       <Burguer toggleValue={toggleValue} />
       <nav className={`navBarContainer ${value ? "" : "hide"}`}>
         <Close toggleValue={toggleValue} />
-        <img className="logo" src={logo} alt="logo" />
+        <Link to="/home">
+          <img className="logo" src={logo} alt="logo" />
+        </Link>
         <ul className="navBarLinks">
           <li>
             <Link to="/home">Home</Link>

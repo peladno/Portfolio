@@ -12,7 +12,7 @@ form {
       padding: 0 .5rem;
       margin-bottom: 1rem;
       border: 2px solid transparent;
-      font-size: $font-title3;
+      font-size: $font-title2;
       transition: border-color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s,
         color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s,
         background 0.2s cubic-bezier(0.25, 0.01, 0.25, 1) 0s;
@@ -21,7 +21,7 @@ form {
     .label {
       display: block;
       margin-bottom: 0.3rem;
-      font-size: $font-title3;
+      font-size: $font-title2;
       font-weight: bold;
       color: $primary;
       transition: color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s;
@@ -29,6 +29,9 @@ form {
     .inputMessage {
       height: 20vh;
     }
+  }
+  svg{
+    margin-right: .3rem;
   }
 }
 
