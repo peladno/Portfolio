@@ -125,7 +125,7 @@
       img {
         filter: grayscale(100%);
         &:hover {
-          transition: transform 0.4s;
+          transition: transform 0.8s;
           transform: scale(1.2);
           filter: none;
         }
@@ -168,7 +168,7 @@
     min-height: 75vh;
     @include flex-box(column, center, space-between);
     .title {
-      width: 28%;
+      width: 22%;
     }
     form {
       padding-top: 1rem;
