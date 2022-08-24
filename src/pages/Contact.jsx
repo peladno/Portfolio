@@ -1,5 +1,5 @@
-import ContactForm from "../components/form/ContactForm";
-import Title from "../components/title/Title"
+import ContactForm from "../components/ContactForm";
+import Title from "../components/Title"
 function Contact() {
   return <main className="mainContact">
   <Title>Contact me</Title>

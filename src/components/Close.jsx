@@ -1,4 +1,4 @@
-import cross from "../../assets/images/cross.svg";
+import cross from "../assets/images/cross.svg";
 
 function Close({ toggleValue }) {
   return (

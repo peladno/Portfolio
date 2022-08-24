@@ -1,4 +1,4 @@
-import Title from "../components/title/Title";
+import Title from "../components/Title";
 import { skills } from "../utils/data";
 
 const items = skills.map((skill) => (

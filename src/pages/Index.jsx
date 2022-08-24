@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Button from "../components/buttons/Button";
+import Button from "../components/Button";
 import indexLogo from "../assets/images/indexLogo.svg";
 
 function Index() {

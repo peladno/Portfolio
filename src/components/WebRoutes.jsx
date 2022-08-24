@@ -1,12 +1,12 @@
 import { Routes, Route } from "react-router-dom";
-import Home from "../../pages/Home";
-import NavBar from "../../components/navBar/NavBar";
-import Footer from "../../components/footer/Footer";
-import Experience from "../../pages/Experience";
-import Skills from "../../pages/Skills";
-import Portfolio from "../../pages/Portfolio";
-import Contact from "../../pages/Contact";
-import NotFound from "../../pages/NotFound";
+import Home from "../pages/Home";
+import NavBar from "./NavBar";
+import Footer from "./Footer";
+import Experience from "../pages/Experience";
+import Skills from "../pages/Skills";
+import Portfolio from "../pages/Portfolio";
+import Contact from "../pages/Contact";
+import NotFound from "../pages/NotFound";
 
 function WebRoutes() {
   return (

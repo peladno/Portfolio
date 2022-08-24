@@ -1,5 +1,5 @@
-import About from "../components/about/About";
-import ProfilePicture from "../components/profilePicture/ProfilePicture";
+import About from "../components/About";
+import ProfilePicture from "../components/ProfilePicture";
 
 function Home() {
   return (

@@ -1,5 +1,5 @@
-import Button from "../components/buttons/Button";
-import Title from "../components/title/Title";
+import Button from "../components/Button";
+import Title from "../components/Title";
 import { skills, portfolio } from "../utils/data";
 
 const portfolioItems = portfolio.map((item) => (

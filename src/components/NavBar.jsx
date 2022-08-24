@@ -1,7 +1,7 @@
-import logo from "../../assets/images/logo.svg";
-import Burguer from "../buttons/Burguer";
-import useToggle from "../../customHooks/useToggle";
-import Close from "../buttons/Close";
+import logo from "../assets/images/logo.svg";
+import Burguer from "./Burguer";
+import useToggle from "../customHooks/useToggle";
+import Close from "./Close";
 import { Link } from "react-router-dom";
 
 function NavBar() {

@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import menuBurguer from "../../assets/images/menuBurguer.svg";
+import menuBurguer from "../assets/images/menuBurguer.svg";
 
 function Burguer({ toggleValue }) {
   return (
