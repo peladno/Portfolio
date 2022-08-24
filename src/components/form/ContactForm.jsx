@@ -1,6 +1,15 @@
+
+import { useState } from "react";
 import Button from "../buttons/Button";
 
 function ContactForm() {
+  const [fullName, setFullName] = useState();
+  const [email, setEmail] = useState();
+  const [message, setMessage] = useState();
+  const [fullNameError, setFullNameError] = useState();
+  const [emailError, setEmailError] = useState();
+  const [messageError, setMessageError] = useState();
+
   return (
     <form>
       <div class="input-group">
