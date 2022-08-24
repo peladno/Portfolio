@@ -1,9 +1,5 @@
 import { useState } from "react";
-import {
-  validateEmail,
-  validateFullName,
-  validateMessage,
-} from "./validation";
+import { validateEmail, validateFullName, validateMessage } from "./validation";
 import Button from "./Button";
 import { useEffect } from "react";
 
@@ -23,46 +19,46 @@ function ContactForm() {
 
   return (
     <form>
-      <div class="input-group">
-        <label class="label">Name</label>
+      <div className="input-group">
+        <label className="label">Name</label>
         <input
-          autocomplete="off"
+          autoComplete="off"
           value={fullName}
           onChange={(e) => setFullName(e.target.value)}
           name="name"
           id="name"
-          class="input"
+          className="input"
           type="text"
           placeholder="Javier Pérez"
           required
         />
-        <label class="label">Email address</label>
+        <label className="label">Email address</label>
         <input
-          autocomplete="off"
+          autoComplete="off"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           name="email"
           id="email"
-          class="input"
+          className="input"
           type="email"
           placeholder="example@gmail.com"
           required
         />
-        <label class="label">Message</label>
+        <label className="label">Message</label>
         <textarea
-          autocomplete="off"
+          autoComplete="off"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           name="message"
           id="message"
-          class="input inputMessage"
+          className="input inputMessage"
           placeholder="What can I help you"
           maxLength="200"
           required
         />
       </div>
 
-      <Button buttonSize="btn--medium" buttonStyle="btn--primary">
+      <Button type="submit" buttonSize="btn--medium" buttonStyle="btn--primary">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
