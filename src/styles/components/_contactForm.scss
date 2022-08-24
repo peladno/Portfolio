@@ -1,0 +1,45 @@
+/* From uiverse.io by @alexruix */
+form {
+  @include flex-box(column, center, center);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  .input-group {
+    .input {
+      width: 70vw;
+      height: 6vh;
+      background-color: $quaternary-trans;
+      border-radius: 0.5rem;
+      padding: 0 .5rem;
+      margin-bottom: 1rem;
+      border: 2px solid transparent;
+      font-size: $font-title3;
+      transition: border-color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s,
+        color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s,
+        background 0.2s cubic-bezier(0.25, 0.01, 0.25, 1) 0s;
+    }
+
+    .label {
+      display: block;
+      margin-bottom: 0.3rem;
+      font-size: $font-title3;
+      font-weight: bold;
+      color: $primary;
+      transition: color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s;
+    }
+    .inputMessage {
+      height: 20vh;
+    }
+  }
+}
+
+.input:hover,
+.input:focus,
+.input-group:hover .input {
+  outline: none;
+  border-color: #05060f;
+}
+
+.input-group:hover .label,
+.input:focus {
+  color: #05060fc2;
+}

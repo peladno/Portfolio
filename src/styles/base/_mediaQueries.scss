@@ -133,6 +133,7 @@
     }
   }
 
+  //portfolio
   .mainPortfolio {
     padding-left: $padding-border;
     padding-right: $padding-border;
@@ -155,6 +156,25 @@
             width: 2vw;
           }
         }
+      }
+    }
+  }
+
+  //contact me
+
+  .mainContact {
+    padding-left: $padding-border;
+    padding-right: $padding-border;
+    min-height: 75vh;
+    @include flex-box(column, center, space-between);
+    .title {
+      width: 28%;
+    }
+    form {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      .input {
+        width: 50vw;
       }
     }
   }
