@@ -2,6 +2,7 @@ import { useState } from "react";
 import { validateEmail, validateFullName, validateMessage } from "./validation";
 import Button from "./Button";
 import { useEffect } from "react";
+import InputError from "./InputError";
 
 function ContactForm() {
   const [fullName, setFullName] = useState("");
@@ -20,7 +21,9 @@ function ContactForm() {
   return (
     <form>
       <div className="input-group">
-        <label className="label">Name</label>
+        <label className="label">
+          Name {fullNameError && <InputError error={fullNameError} />}
+        </label>
         <input
           autoComplete="off"
           value={fullName}
@@ -32,7 +35,9 @@ function ContactForm() {
           placeholder="Javier Pérez"
           required
         />
-        <label className="label">Email address</label>
+        <label className="label">
+          Email address {emailError && <InputError error={emailError} />}
+        </label>
         <input
           autoComplete="off"
           value={email}
@@ -44,7 +49,10 @@ function ContactForm() {
           placeholder="example@gmail.com"
           required
         />
-        <label className="label">Message</label>
+
+        <label className="label">
+          Message {messageError && <InputError error={messageError} />}
+        </label>
         <textarea
           autoComplete="off"
           value={message}

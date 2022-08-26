@@ -10,7 +10,6 @@ form {
       background-color: $quaternary-trans;
       border-radius: 0.5rem;
       padding: 0 .5rem;
-      margin-bottom: 1rem;
       border: 2px solid transparent;
       font-size: $font-title2;
       transition: border-color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s,
@@ -25,6 +24,7 @@ form {
       font-weight: bold;
       color: $primary;
       transition: color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s;
+      margin-top: .8rem;
     }
     .inputMessage {
       height: 20vh;
