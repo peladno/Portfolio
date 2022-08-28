@@ -1,25 +1,26 @@
-@import './base/globals';
-@import'./base/mixins';
-@import './base/variables';
-@import './components/navBar';
-@import './components/footer';
-@import './components/burguer';
-@import './components/button';
-@import './components/close';
-@import './components/profilePicture';
-@import './components/about';
-@import './components/index';
-@import './components/title';
-@import './pages/skills';
-@import './pages/experience';
-@import './pages/home';
-@import './pages/portfolio';
-@import './pages/contact';
-@import './components/contactForm';
-@import './components/inputError';
-@import './base/mediaQueries';
+@import "./base/globals";
+@import "./base/mixins";
+@import "./base/variables";
+@import "./components/navBar";
+@import "./components/footer";
+@import "./components/burguer";
+@import "./components/button";
+@import "./components/close";
+@import "./components/profilePicture";
+@import "./components/about";
+@import "./components/index";
+@import "./components/title";
+@import "./components/spinner";
+@import "./pages/skills";
+@import "./pages/experience";
+@import "./pages/home";
+@import "./pages/portfolio";
+@import "./pages/contact";
+@import "./components/contactForm";
+@import "./components/inputError";
+@import "./base/mediaQueries";
 
-body{
-    background-image: $wallpaper;
-    background-color: $tertiary;
+body {
+  background-image: $wallpaper;
+  background-color: $tertiary;
 }

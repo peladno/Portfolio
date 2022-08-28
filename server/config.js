@@ -6,5 +6,5 @@ export const {user, pass, port, emailPort, clientURL} = {
     pass: process.env.PASS,
     port: process.env.PORT,
     emailPort: process.env.EMAIL_PORT,
-    clientURL: process.env.CLIENT_URL
+    clientURL: process.env.CLIENT_URL,
 }

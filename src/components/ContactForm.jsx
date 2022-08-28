@@ -3,6 +3,7 @@ import { validateEmail, validateFullName, validateMessage } from "./validation";
 import Button from "./Button";
 import { useEffect } from "react";
 import InputError from "./InputError";
+import { SendEmail } from "../API/Api";
 
 function ContactForm() {
   const [fullName, setFullName] = useState("");
@@ -11,15 +12,31 @@ function ContactForm() {
   const [fullNameError, setFullNameError] = useState();
   const [emailError, setEmailError] = useState();
   const [messageError, setMessageError] = useState();
+  const [send, setSend] = useState()
 
   useEffect(() => {
     validateFullName({ fullName, setFullNameError });
     validateEmail({ email, setEmailError });
     validateMessage({ message, setMessageError });
-  }, [email, message, fullName]);
+    if(send) {
+      setFullName("")
+      setEmail("")
+      setMessage("")
+      setSend()
+    }
+    
+  }, [email, message, fullName, send]);
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+    if (!fullNameError & !emailError & !messageError) {
+      SendEmail({fullName, email, message, setSend})
+    }
+    
+  };
 
   return (
-    <form>
+    <form onSubmit={submitHandler}>
       <div className="input-group">
         <label className="label">
           Name {fullNameError && <InputError error={fullNameError} />}
