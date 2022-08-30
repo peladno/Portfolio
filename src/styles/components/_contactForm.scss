@@ -1,7 +1,7 @@
 /* From uiverse.io by @alexruix */
 form {
   @include flex-box(column, center, center);
-  padding-top: 2rem;
+  padding-top: 3rem;
   padding-bottom: 2rem;
   .input-group {
     .input {
@@ -28,6 +28,7 @@ form {
     }
     .inputMessage {
       height: 20vh;
+      margin-bottom: 1rem;
     }
   }
   svg{
@@ -42,7 +43,7 @@ form {
   border-color: #05060f;
 }
 
-.input-group:hover .label,
+.input:hover .label,
 .input:focus {
   color: #05060fc2;
 }
