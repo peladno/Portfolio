@@ -98,7 +98,7 @@ export const skills = [
   },
 ];
 
-export const certifications = [
+export const certificates = [
   {
     name: "Web developer",
     credential_id: "61ea1117c4fb9f0068cfeedd",

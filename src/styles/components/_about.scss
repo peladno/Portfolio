@@ -40,6 +40,9 @@
         color: $color-font;
         margin-bottom: 0.5rem;
         list-style-type: circle;
+        a {
+          color: $secondary;
+        }
       }
     }
    

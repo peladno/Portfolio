@@ -1,4 +1,5 @@
 import Button from "./Button";
+import Certifications from "./Certifications";
 
 function About() {
   return (
@@ -17,14 +18,7 @@ function About() {
         </p>
       </div>
       <div className="certifications">
-        <h2>Certifications</h2>
-        <ul>
-          <li>Lorem ipsum dolor sit amet.</li>
-          <li>Lorem ipsum dolor sit amet.</li>
-          <li>Lorem ipsum dolor sit amet.</li>
-          <li>Lorem ipsum dolor sit amet.</li>
-          <li>Lorem ipsum dolor sit amet.</li>
-        </ul>
+        <Certifications/>
         <Button
           type="button"
           buttonStyle="btn--primary"
