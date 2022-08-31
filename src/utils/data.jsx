@@ -28,13 +28,13 @@ export const portfolio = [
     name: "BackEnd challenges",
     description: "All the challenges I made for my class of BackEnd",
     skills: ["HTML", "CSS", "NodeJS", "Express", "MongoDB", "MySQL", "EJS"],
-    img: "",
+    img: "https://firebasestorage.googleapis.com/v0/b/portfoliojavierperez.appspot.com/o/portfolioImages%2FCaptura%20desde%202022-08-30%2005-09-35.png?alt=media&token=70c24c93-0cf3-4df4-afde-60d3b87d0289",
   },
   {
     id: 5,
     name: "Portfolio",
     description: "This portfolio",
-    skills: ["HTML", "CSS", "Sass", "React", "Firebase"],
+    skills: ["HTML", "CSS", "Sass", "React", "Firebase", "NodeJS", "Express"],
     img: "https://firebasestorage.googleapis.com/v0/b/portfoliojavierperez.appspot.com/o/portfolioImages%2FCaptura%20desde%202022-08-18%2001-01-32.png?alt=media&token=8955b3d8-d30a-43a9-9570-9ad51f133a93",
   },
 ];

@@ -123,6 +123,7 @@
     min-height: $desktop-height;
     padding-left: $padding-border;
     padding-right: $padding-border;
+    background-size: 15%;
     @include flex-box(column, center, flex-start);
     .skillsContainer {
       grid-template-columns: repeat(auto-fit, minmax(170px, 0.5fr));
@@ -142,12 +143,13 @@
   .mainPortfolio {
     padding-left: $padding-border;
     padding-right: $padding-border;
-    min-height: 75vh;
+    min-height: $desktop-height;
+    background-size: 15%;
     @include flex-box(column, center, space-between);
     .portfolioContainer {
       display: flex;
       .divPortfolio {
-        width: auto;
+        width: 18vw;
         height: 60vh;
         padding: 1rem;
         h2 {
@@ -155,6 +157,7 @@
         }
         .portfolioImg {
           width: 100%;
+          height: 150px;
         }
         .imgSkills {
           img {
@@ -170,7 +173,8 @@
   .mainContact {
     padding-left: $padding-border;
     padding-right: $padding-border;
-    min-height: 75vh;
+    min-height: $desktop-height;
+    background-size: 15%;
     @include flex-box(column, center, flex-start);
     .title {
       width: 22%;

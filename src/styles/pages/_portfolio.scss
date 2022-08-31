@@ -1,37 +1,42 @@
-.divPortfolio {
-    width:100vw;
+.mainPortfolio {
+  background-image: url(/src/assets/images/daruma.svg);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 40%;
+  .divPortfolio {
+    width: 100vw;
     padding: 2rem;
     @include flex-box(column, center, center);
+
     h2 {
-        font-size: $font-title2;
-        color: $primary;
+      font-size: $font-title2;
+      color: $primary;
     }
     .portfolioImg {
-        width: 100%;
-        margin-top: 1rem;
-        margin-bottom: .5rem;
-        border: 4px solid $color-font;
-        border-radius: 5px;
-
+      width: 100%;
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      border: 4px solid $color-font;
+      border-radius: 5px;
     }
-    .imgSkills{
-        width:100%;
-    
-        @include flex-box(row, center, flex-start);
-        img{
-            width: 10vw;
-            padding-right: .5rem;
-        }
+    .imgSkills {
+      width: 100%;
+
+      @include flex-box(row, center, flex-start);
+      img {
+        width: 10vw;
+        padding-right: 0.5rem;
+      }
     }
     p {
-        padding-top: .5rem;
-        padding-bottom: 1rem;
-        text-align: justify;
-        height: 20%;
+      padding-top: 0.5rem;
+      padding-bottom: 1rem;
+      text-align: justify;
+      height: 20%;
     }
     .divButtons {
-        width: 100%;
-        @include flex-box(row, center, space-around);
+      width: 100%;
+      @include flex-box(row, center, space-around);
     }
-
+  }
 }

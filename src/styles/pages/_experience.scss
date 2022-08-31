@@ -8,11 +8,11 @@
     min-height: 65vh;
     @include flex-box(column, center, center);
     h2 {
-      font-size: $font-title2;
+      font-size: 3rem;
       color: $primary;
     }
     p {
-      font-size: $font-text;
+      font-size: 2rem;
       color: $color-font;
       line-height: 22px;
       text-align: justify;

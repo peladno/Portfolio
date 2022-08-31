@@ -1,4 +1,8 @@
 .skillsMain {
+  background-image: url(/src/assets/images/daruma.svg);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 40%;
   .skillsContainer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 0.5fr));
