@@ -6,7 +6,8 @@
   z-index: 100;
   top: 0;
   right: 0;
-  @include flex-box(column, center,center);
+  padding-top: 10vh;
+  @include flex-box(column, center,flex-start);
   .logo {
     width: 35vw;
   }

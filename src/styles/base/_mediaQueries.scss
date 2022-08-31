@@ -1,17 +1,15 @@
-@media (min-width: 768px) {
-  body {
-    overflow: hidden;
-  }
+@media (min-width: 728px) {
   //navBar
   .navBarContainer {
     height: 100px;
     width: 100%;
     position: static;
-    @include flex-box(row, center, space-between);
+    @include flex-box(row, center, center);
     padding-left: $padding-border;
     padding-right: $padding-border;
+    padding-top: 0;
     .logo {
-      width: 5vw;
+      display: none;
     }
     .cross {
       display: none;
@@ -46,7 +44,7 @@
     display: none;
   }
   .footerContainer {
-    height: 20vh;
+    height: 10vh;
     .footerContent {
       padding-left: $padding-border;
       padding-right: $padding-border;
@@ -101,10 +99,10 @@
   //title
   .title {
     @include flex-box(column, center, center);
-    width: 18%;
     background-color: transparent;
     padding-bottom: 0;
     margin-top: 1.5rem;
+    background-image: initial;
     h1 {
       width: 100%;
     }
@@ -128,6 +126,102 @@
     .skillsContainer {
       grid-template-columns: repeat(auto-fit, minmax(170px, 0.5fr));
       width: 100%;
+    }
+  }
+
+  //portfolio
+  .mainPortfolio {
+    background-size: 15%;
+    min-height: $desktop-height;
+    @include flex-box(column, center, flex-start);
+    .portfolioContainer {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      justify-items: center;
+      .divPortfolio {
+        width: 80%;
+        padding: 1rem;
+        h2 {
+          font-size: 1.5rem;
+        }
+        .portfolioImg {
+          width: 100%;
+          height: 150px;
+        }
+        .imgSkills {
+          img {
+            width: 2vw;
+          }
+        }
+        p {
+          height: 30%;
+        }
+      }
+    }
+  }
+
+  //contact me
+  .mainContact {
+    padding-left: $padding-border;
+    padding-right: $padding-border;
+    min-height: $desktop-height;
+    background-size: 15%;
+    @include flex-box(column, center, flex-start);
+    form {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      .input {
+        width: 50vw;
+        font-size: $font-title3;
+      }
+      .label {
+        font-size: $font-title3;
+      }
+    }
+  }
+}
+
+@media (min-width: 1500px) {
+  body {
+    overflow: hidden;
+  }
+  .navBarContainer {
+    @include flex-box(row, center, space-between);
+    .logo {
+      display: block;
+      width: 5vw;
+    }
+  }
+  //title
+  .title {
+
+    background-image: url("/src/assets/images/mountFuji.svg");
+  }
+
+  //footer
+  .footerContainer {
+    height: 20vh;
+    .footerContent {
+      padding-left: $padding-border;
+      padding-right: $padding-border;
+      ul {
+        li {
+          padding-top: 0.3rem;
+          padding-bottom: 0.3rem;
+        }
+      }
+      .socialMedia {
+        img {
+          width: 2.2rem;
+        }
+      }
+    }
+  }
+
+  //skills
+  .skillsMain {
+    .skillsContainer {
       img {
         filter: grayscale(100%);
         &:hover {
@@ -143,64 +237,36 @@
   .mainPortfolio {
     padding-left: $padding-border;
     padding-right: $padding-border;
-    min-height: $desktop-height;
-    background-size: 15%;
-    @include flex-box(column, center, space-between);
     .portfolioContainer {
-      display: flex;
+      margin-top: 1.5rem;
+      display: grid;
+      height: 100%;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       .divPortfolio {
-        width: 18vw;
-        height: 60vh;
-        padding: 1rem;
-        h2 {
-          font-size: 1.5rem;
-        }
-        .portfolioImg {
-          width: 100%;
-          height: 150px;
-        }
-        .imgSkills {
-          img {
-            width: 2vw;
-          }
-        }
+        width: 100%;
       }
     }
   }
 
-  //contact me
+  //contact
 
-  .mainContact {
-    padding-left: $padding-border;
-    padding-right: $padding-border;
-    min-height: $desktop-height;
-    background-size: 15%;
-    @include flex-box(column, center, flex-start);
+ /*.mainContact {
     .title {
-      width: 22%;
+      width: 18%;
     }
-    form {
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-      .input {
-        width: 50vw;
-        font-size: $font-title3;
-      }
-      .label {
-        font-size: $font-title3;
-      }
-    }
-  }
+  }*/
 }
 
-@media (max-width: 768px) {
+@media (max-width: 728px) {
   //navBar
-  .navBarLinks {
-    width: 100%;
-    padding-right: 2rem;
-    li {
-      padding-bottom: 0.4rem;
-      padding-left: 0.8rem;
+  .navBarContainer {
+    .navBarLinks {
+      width: 100%;
+      padding-right: 2rem;
+      li {
+        padding-bottom: 0.4rem;
+        padding-left: 0.8rem;
+      }
     }
   }
 }
