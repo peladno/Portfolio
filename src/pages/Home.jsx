@@ -3,10 +3,13 @@ import ProfilePicture from "../components/ProfilePicture";
 
 function Home() {
   return (
-    <div className="homeContainer">
-      <ProfilePicture />
-      <About />
-    </div>
+    <>
+      {/*<div className="blur"></div>*/}
+      <div className="homeContainer">
+        <ProfilePicture />
+        <About />
+      </div>
+    </>
   );
 }
 

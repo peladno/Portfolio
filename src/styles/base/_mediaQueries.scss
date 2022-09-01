@@ -23,11 +23,16 @@
         margin-right: $margin-links-menu;
         margin-top: none;
         margin-bottom: 1.5rem;
-        font-size: $font-menu-desktop;
+        
         border-bottom: 3px solid $secondary;
         padding-bottom: 0.5rem;
       }
     }
+  }
+
+  .hide {
+    transform: translateX(0);
+    transition: none;
   }
   //footer
   .footerContainer {
@@ -71,11 +76,10 @@
 
   //home
   .homeContainer {
-    @include flex-box(row, center, center);
+    @include flex-box(column, center, center);
     background-size: 15%;
   }
   .pictureContainer {
-    height: $desktop-height;
     img {
       width: 45%;
     }
@@ -91,7 +95,16 @@
     padding-right: 6rem;
     .about {
       p {
-        font-size: $font-text-desktop;
+        font-size: $font-text;
+        line-height: 30px;
+      }
+    }
+  }
+
+  .certifications {
+    ul {
+      li{
+        font-size: $font-text;
       }
     }
   }
@@ -102,7 +115,7 @@
     background-color: transparent;
     padding-bottom: 0;
     margin-top: 1.5rem;
-    background-image: initial;
+    //background-image: initial;
     h1 {
       width: 100%;
     }
@@ -113,18 +126,21 @@
     @include flex-box(column, center, flex-start);
     background-size: 15%;
     .experienceContainer {
-      min-height: 60vh;
+      min-height: $desktop-height;
     }
   }
   //skilss
   .skillsMain {
-    min-height: $desktop-height;
+    min-height: 85vh;
     padding-left: $padding-border;
     padding-right: $padding-border;
     background-size: 15%;
+    h1{
+      padding-right: 8rem;
+    }
     @include flex-box(column, center, flex-start);
     .skillsContainer {
-      grid-template-columns: repeat(auto-fit, minmax(170px, 0.5fr));
+      grid-template-columns: repeat(auto-fit, minmax(200px, 0.5fr));
       width: 100%;
     }
   }
@@ -133,6 +149,9 @@
   .mainPortfolio {
     background-size: 15%;
     min-height: $desktop-height;
+    h1 {
+      padding-right: 4rem;
+    }
     @include flex-box(column, center, flex-start);
     .portfolioContainer {
       width: 100%;
@@ -165,18 +184,18 @@
   .mainContact {
     padding-left: $padding-border;
     padding-right: $padding-border;
-    min-height: $desktop-height;
+    min-height: 85vh;
     background-size: 15%;
     @include flex-box(column, center, flex-start);
     form {
       padding-top: 1rem;
       padding-bottom: 1rem;
       .input {
-        width: 50vw;
-        font-size: $font-title3;
+        width: 80vw;
+        font-size: $font-title;
       }
       .label {
-        font-size: $font-title3;
+        font-size: $font-title;
       }
     }
   }
@@ -184,7 +203,7 @@
 
 @media (min-width: 1500px) {
   body {
-    overflow: hidden;
+    overflow: hidden !important;
   }
   .navBarContainer {
     @include flex-box(row, center, space-between);
@@ -192,10 +211,14 @@
       display: block;
       width: 5vw;
     }
+    .navBarLinks {
+      li {
+        font-size: $font-menu-desktop;
+      }
+    }
   }
   //title
   .title {
-
     background-image: url("/src/assets/images/mountFuji.svg");
   }
 
@@ -219,9 +242,56 @@
     }
   }
 
+  //home
+  .homeContainer {
+    @include flex-box(row, center, center);
+    background-size: 15%;
+  }
+  .pictureContainer {
+    height: $desktop-height;
+    img {
+      width: 45%;
+    }
+    div::before {
+      font-size: 4rem;
+      height: 25rem;
+    }
+  }
+
+  .aboutContainer {
+    width: 100%;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    .about {
+      p {
+        font-size: $font-text-desktop;
+        line-height: 22px;
+      }
+    }
+  }
+
+  .certifications {
+    ul {
+      li{
+        font-size: $font-text-desktop;
+      }
+    }
+  }
+
+  //experience
+  .experienceMain {
+    .experienceContainer {
+      min-height: 60vh;
+    }
+  }
+
   //skills
   .skillsMain {
+    min-height: $desktop-height;
+    
     .skillsContainer {
+      grid-template-columns: repeat(auto-fit, minmax(170px, 0.5fr));
+
       img {
         filter: grayscale(100%);
         &:hover {
@@ -237,6 +307,7 @@
   .mainPortfolio {
     padding-left: $padding-border;
     padding-right: $padding-border;
+   
     .portfolioContainer {
       margin-top: 1.5rem;
       display: grid;
@@ -250,11 +321,24 @@
 
   //contact
 
- /*.mainContact {
-    .title {
-      width: 18%;
+  .mainContact {
+    padding-left: $padding-border;
+    padding-right: $padding-border;
+    min-height: $desktop-height;
+    background-size: 15%;
+    @include flex-box(column, center, flex-start);
+    form {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      .input {
+        width: 50vw;
+        font-size: $font-title3;
+      }
+      .label {
+        font-size: $font-title3;
+      }
     }
-  }*/
+  }
 }
 
 @media (max-width: 728px) {

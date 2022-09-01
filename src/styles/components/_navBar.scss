@@ -1,13 +1,18 @@
+.navBarBlur {
+}
+
 .navBarContainer {
   width: 80%;
   height: 100vh;
   background-color: $primary;
-  position: absolute;
+  position: fixed;
   z-index: 100;
   top: 0;
   right: 0;
   padding-top: 10vh;
-  @include flex-box(column, center,flex-start);
+  overflow: hidden;
+
+  @include flex-box(column, center, flex-start);
   .logo {
     width: 35vw;
   }
@@ -25,5 +30,11 @@
 }
 
 .hide {
-  display: none;
+  transform: translateX(300px);
+  transition: transform 0.3s 0.5s;
+}
+
+.show {
+  transform: translateX(0);
+  transition: transform 0.3s;
 }
