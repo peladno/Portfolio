@@ -1,5 +1,4 @@
-.navBarBlur {
-}
+
 
 .navBarContainer {
   width: 80%;
@@ -27,14 +26,4 @@
       border-bottom: 2px solid $secondary;
     }
   }
-}
-
-.hide {
-  transform: translateX(300px);
-  transition: transform 0.3s 0.5s;
-}
-
-.show {
-  transform: translateX(0);
-  transition: transform 0.3s;
 }

@@ -17,7 +17,7 @@ function Button({ children, type, onClick, buttonSize, buttonStyle }) {
         type={type}
         onClick={onClick}
       >
-        {children}
+        <p>{children}</p>
       </button>
     </>
   );

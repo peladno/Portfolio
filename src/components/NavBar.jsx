@@ -12,7 +12,7 @@ function NavBar() {
   return (
     <>
       <Burguer toggleValue={toggleValue} />
-      <div className="navBarBlur">
+      <div className={`${value?"navBarBlur":""}`}>
         <nav className={`navBarContainer ${value ? "show" : "hide"}`}>
           <Close toggleValue={toggleValue} />
           <Link to="/home">

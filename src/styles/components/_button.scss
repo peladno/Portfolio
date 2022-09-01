@@ -1,9 +1,12 @@
 /* From uiverse.io by @hritik5102 */
 .mainButton {
   position: relative;
-  height: 40px;
+  height: 3rem;
   border-radius: 5px;
   cursor: grab;
+  p{
+    font-size: $font-text-mobile;
+  }
 }
 
 .mainButton:after {
@@ -40,23 +43,28 @@
   }
 }
 
-.btn--small{
+.btn--small {
   width: 4rem;
 }
 
-.btn--medium{
+.btn--medium {
   width: 6rem;
   margin-bottom: 1rem;
 }
 
-.btn--large{
+.btn--large {
   width: 10rem;
 }
 
-@media (min-width:728px){
-
+@media (min-width: 728px) {
+  .btn--medium {
+    width: 8rem;
+    margin-bottom: 1rem;
+  }
 }
-
-@media (min-width:1500px){
-  
+@media (min-width: 1500px) {
+  .btn--medium {
+    width: 6rem;
+    margin-bottom: 1rem;
+  }
 }

@@ -1,7 +1,7 @@
 import { certificates } from "../utils/data";
 
 const items = certificates.map((item) => (
-  <li>
+  <li key={item.credential_id}>
     {item.name}: {item.credential_id} <a href={item.url}>[Link]</a>
   </li>
 ));

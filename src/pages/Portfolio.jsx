@@ -16,7 +16,7 @@ const portfolioItems = portfolio.map((item) => (
         );
       })}
     </ul>
-    <p>{item.description}</p>
+    <p className="itemDescription">{item.description}</p>
     <div className="divButtons">
       <a href="">
         <Button
