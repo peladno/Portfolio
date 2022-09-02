@@ -204,7 +204,7 @@
   }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1300px) {
   body {
     overflow: hidden !important;
   }
@@ -317,7 +317,7 @@
       height: 100%;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       .divPortfolio {
-        width: 100%;
+        max-width: 18vw;
       }
     }
   }
