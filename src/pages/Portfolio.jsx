@@ -1,9 +1,16 @@
 import Button from "../components/Button";
 import Title from "../components/Title";
 import { skills, portfolio } from "../utils/data";
+import { motion } from "framer-motion";
 
 const portfolioItems = portfolio.map((item) => (
-  <div className="divPortfolio" key={item.id}>
+  <motion.main
+    className="divPortfolio"
+    key={item.id}
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}
+  >
     <h2>{item.name}</h2>
     <img className="portfolioImg" src={item.img} alt={item.name} />
     <ul className="imgSkills">
@@ -37,7 +44,7 @@ const portfolioItems = portfolio.map((item) => (
         </Button>
       </a>
     </div>
-  </div>
+  </motion.main>
 ));
 
 function Portfolio() {

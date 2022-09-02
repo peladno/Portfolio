@@ -1,12 +1,18 @@
 import ContactForm from "../components/ContactForm";
 import Title from "../components/Title";
+import {motion} from "framer-motion";
 
 function Contact() {
   return (
-    <main className="mainContact">
+    <motion.main 
+    className="mainContact"
+    initial={{opacity:0}}
+    animate={{opacity:1}}
+    exit={{opacity:0}}
+    >
       <Title>Contact me</Title>
       <ContactForm />
-    </main>
+    </motion.main>
   );
 }
 

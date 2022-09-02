@@ -1,5 +1,6 @@
 import Title from "../components/Title";
 import { skills } from "../utils/data";
+import { motion } from "framer-motion";
 
 const items = skills.map((skill) => (
   <div key={skill.name}>
@@ -9,10 +10,15 @@ const items = skills.map((skill) => (
 
 function Skills() {
   return (
-    <main className="skillsMain">
+    <motion.main
+      className="skillsMain"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <Title>Skills</Title>
       <div className="skillsContainer">{items}</div>
-    </main>
+    </motion.main>
   );
 }
 
