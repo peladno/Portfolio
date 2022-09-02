@@ -1,7 +1,9 @@
 import Button from "./Button";
 import Certifications from "./Certifications";
-
+import { CV_URL } from "../API/URL";
 function About() {
+  const handleClick = () => window.open(`${CV_URL}`, "_blank");
+
   return (
     <div className="aboutContainer">
       <div className="about">
@@ -18,9 +20,10 @@ function About() {
         </p>
       </div>
       <div className="certifications">
-        <Certifications/>
+        <Certifications />
         <Button
           type="button"
+          onClick={handleClick}
           buttonStyle="btn--primary"
           buttonSize="btn--large"
         >
