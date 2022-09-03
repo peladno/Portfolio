@@ -26,7 +26,7 @@
         margin-right: $margin-links-menu;
         margin-top: none;
         margin-bottom: 1.5rem;
-        
+
         border-bottom: 3px solid $secondary;
         padding-bottom: 0.5rem;
       }
@@ -106,7 +106,7 @@
 
   .certifications {
     ul {
-      li{
+      li {
         font-size: $font-text;
       }
     }
@@ -138,7 +138,7 @@
     padding-left: $padding-border;
     padding-right: $padding-border;
     background-size: 15%;
-    h1{
+    h1 {
       padding-right: 8rem;
     }
     @include flex-box(column, center, flex-start);
@@ -193,6 +193,7 @@
     form {
       padding-top: 1rem;
       padding-bottom: 1rem;
+      height: 60vh;
       .input {
         width: 80vw;
         font-size: $font-title;
@@ -204,7 +205,7 @@
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1200px) {
   body {
     overflow: hidden !important;
   }
@@ -271,12 +272,12 @@
         line-height: 22px;
       }
     }
-  }
 
-  .certifications {
-    ul {
-      li{
-        font-size: $font-text-desktop;
+    .certifications {
+      ul {
+        li {
+          font-size: $font-text-desktop;
+        }
       }
     }
   }
@@ -291,7 +292,7 @@
   //skills
   .skillsMain {
     min-height: $desktop-height;
-    
+
     .skillsContainer {
       grid-template-columns: repeat(auto-fit, minmax(170px, 0.5fr));
 
@@ -310,7 +311,7 @@
   .mainPortfolio {
     padding-left: $padding-border;
     padding-right: $padding-border;
-   
+
     .portfolioContainer {
       margin-top: 1.5rem;
       display: grid;
@@ -318,6 +319,12 @@
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       .divPortfolio {
         max-width: 18vw;
+        h2 {
+          font-size: $font-menu-desktop;
+        }
+        .itemDescription {
+          min-height: 28%;
+        }
       }
     }
   }
@@ -365,14 +372,13 @@
     }
   }
 
-.hide {
-  transform: translateX(350px);
-  transition: transform 0.3s;
-}
+  .hide {
+    transform: translateX(350px);
+    transition: transform 0.3s;
+  }
 
-.show {
-  transform: translateX(0);
-  transition: transform 0.3s;
-}
-
+  .show {
+    transform: translateX(0);
+    transition: transform 0.3s;
+  }
 }

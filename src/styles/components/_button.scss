@@ -59,12 +59,14 @@
 @media (min-width: 728px) {
   .btn--medium {
     width: 8rem;
+    height: 3rem;
     margin-bottom: 1rem;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: 1200px) {
   .btn--medium {
-    width: 6rem;
+    width: 5rem;
+    height: 2.5rem;
     margin-bottom: 1rem;
   }
 }
