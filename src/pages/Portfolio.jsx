@@ -25,7 +25,7 @@ const portfolioItems = portfolio.map((item) => (
     </ul>
     <p className="itemDescription">{item.description}</p>
     <div className="divButtons">
-      <a href="">
+      <a href={item.github}>
         <Button
           type="button"
           buttonStyle="btn--primary"
@@ -34,7 +34,7 @@ const portfolioItems = portfolio.map((item) => (
           Github
         </Button>
       </a>
-      <a href="">
+      <a href={item.web}>
         <Button
           type="button"
           buttonStyle="btn--primary"
