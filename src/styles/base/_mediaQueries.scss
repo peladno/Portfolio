@@ -26,9 +26,28 @@
         margin-right: $margin-links-menu;
         margin-top: none;
         margin-bottom: 1.5rem;
-
-        border-bottom: 3px solid $secondary;
         padding-bottom: 0.5rem;
+        position: relative;
+
+        border-bottom: none;
+
+        &:after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          transform: scaleX(1);
+          height: 2px;
+          bottom: 0;
+          left: 0;
+          background-color: $secondary;
+          transform-origin: bottom left;
+          transition: transform 0.25s ease-out;
+        }
+
+        &:hover:after {
+          transform: scale(0);
+          transform-origin: bottom left;
+        }
       }
     }
   }
@@ -368,7 +387,7 @@
       width: 100%;
       padding-right: 2rem;
       li {
-        padding-bottom: 0.4rem;
+        padding-bottom: 1rem;
         padding-left: 0.8rem;
       }
     }
