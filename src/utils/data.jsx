@@ -1,23 +1,23 @@
-import html from "../../public/svgSkills/html.svg";
-import sass from "../../public/svgSkills/sass.svg";
-import css from "../../public/svgSkills/css.svg";
-import node from "../../public/svgSkills/Vector.svg";
-import js from "../../public/svgSkills/js.svg";
-import mongo from "../../public/svgSkills/mongo.svg";
-import firebase from "../../public/svgSkills/firebase.svg";
-import git from "../../public/svgSkills/git.svg";
-import materialUI from "../../public/svgSkills/materialUI.svg";
-import mySQL from "../../public/svgSkills/mySql.svg";
-import express from "../../public/svgSkills/express.svg";
-import ejs from "../../public/svgSkills/ejs.svg";
-import bootstrap from "../../public/svgSkills/bootstrap.svg";
-import react from "../../public/svgSkills/react.svg";
+import html from "../assets/images/svgSkills/html.svg";
+import sass from "../assets/images/svgSkills/sass.svg";
+import css from "../assets/images/svgSkills/css.svg";
+import node from "../assets/images/svgSkills/Vector.svg";
+import js from "../assets/images/svgSkills/js.svg";
+import mongo from "../assets/images/svgSkills/mongo.svg";
+import firebase from "../assets/images/svgSkills/firebase.svg";
+import git from "../assets/images/svgSkills/git.svg";
+import materialUI from "../assets/images/svgSkills/materialUI.svg";
+import mySQL from "../assets/images/svgSkills/mySql.svg";
+import express from "../assets/images/svgSkills/express.svg";
+import ejs from "../assets/images/svgSkills/ejs.svg";
+import bootstrap from "../assets/images/svgSkills/bootstrap.svg";
+import react from "../assets/images/svgSkills/react.svg";
 
-import eshop from "../../public/portfolio/eshop.webp"
-import challenges from "../../public/portfolio/challenge.webp"
-import clubarduino from "../../public/portfolio/clubarduino.webp"
-import portfolioImg from "../../public/portfolio/portfolio.webp"
-import recipes from "../../public/portfolio/recipes.webp"
+import eshop from "../assets/images/portfolio/eshop.webp"
+import challenges from "../assets/images/portfolio/challenge.webp"
+import clubarduino from "../assets/images/portfolio/clubarduino.webp"
+import portfolioImg from "../assets/images/portfolio/portfolio.webp"
+import recipes from "../assets/images/portfolio/recipes.webp"
 
 export const portfolio = [
   {
