@@ -1,3 +1,24 @@
+import html from "../../public/svgSkills/html.svg";
+import sass from "../../public/svgSkills/sass.svg";
+import css from "../../public/svgSkills/css.svg";
+import node from "../../public/svgSkills/Vector.svg";
+import js from "../../public/svgSkills/js.svg";
+import mongo from "../../public/svgSkills/mongo.svg";
+import firebase from "../../public/svgSkills/firebase.svg";
+import git from "../../public/svgSkills/git.svg";
+import materialUI from "../../public/svgSkills/materialUI.svg";
+import mySQL from "../../public/svgSkills/mySql.svg";
+import express from "../../public/svgSkills/express.svg";
+import ejs from "../../public/svgSkills/ejs.svg";
+import bootstrap from "../../public/svgSkills/bootstrap.svg";
+import react from "../../public/svgSkills/react.svg";
+
+import eshop from "../../public/portfolio/eshop.webp"
+import challenges from "../../public/portfolio/challenge.webp"
+import clubarduino from "../../public/portfolio/clubarduino.webp"
+import portfolioImg from "../../public/portfolio/portfolio.webp"
+import recipes from "../../public/portfolio/recipes.webp"
+
 export const portfolio = [
   {
     id: 1,
@@ -5,10 +26,9 @@ export const portfolio = [
     description:
       "First project made for my class of web development. Simple static website for a existing club",
     skills: ["HTML", "Bootstrap", "CSS", "Sass"],
-    img: "/src/assets/images/portfolio/clubarduino.webp",
+    img: `${clubarduino}`,
     web: "https://peladno.github.io/club-arduino/index.html",
-    github: "https://github.com/peladno/club-arduino"
-
+    github: "https://github.com/peladno/club-arduino",
   },
   {
     id: 2,
@@ -16,7 +36,7 @@ export const portfolio = [
     description:
       "Second project, for my class of JavaScript, Using almost all Vanilla JS and a bit of Bootstrap",
     skills: ["HTML", "CSS", "Sass", "JavaScript", "Bootstrap"],
-    img: "/src/assets/images/portfolio/recipes.webp",
+    img: `${recipes}`,
     web: "https://peladno.github.io/JS28160JavierPerez/",
     github: "https://github.com/peladno/JS28160JavierPerez",
   },
@@ -26,7 +46,7 @@ export const portfolio = [
     description:
       "Third project for my class of React JS, using Firebase as a database (just to alocate products infomation)",
     skills: ["HTML", "CSS", "React", "Firebase", "MaterialUI"],
-    img: "/src/assets/images/portfolio/eshop.webp",
+    img: `${eshop}`,
     web: "https://javierperezreact31140.web.app/",
     github: "https://github.com/peladno/JavierPerezReact31140",
   },
@@ -35,7 +55,7 @@ export const portfolio = [
     name: "BackEnd challenges",
     description: "All the challenges I made for my class of BackEnd",
     skills: ["HTML", "CSS", "NodeJS", "Express", "MongoDB", "MySQL", "EJS"],
-    img: "/src/assets/images/portfolio/challenge.webp",
+    img: `${challenges}`,
     github: "https://github.com/peladno/backendExpress",
   },
   {
@@ -43,7 +63,7 @@ export const portfolio = [
     name: "Portfolio",
     description: "This portfolio",
     skills: ["HTML", "CSS", "Sass", "React", "NodeJS", "Express"],
-    img: "/src/assets/images/portfolio/portfolio.webp",
+    img: `${portfolioImg}`,
     github: "https://github.com/peladno/portfolio",
   },
 ];
@@ -51,59 +71,59 @@ export const portfolio = [
 export const skills = [
   {
     name: "HTML",
-    img: "/src/assets/images/svgSkills/html.svg",
+    img: `${html}`,
   },
   {
     name: "CSS",
-    img: "/src/assets/images/svgSkills/css.svg",
+    img: `${css}`,
   },
   {
     name: "JavaScript",
-    img: "/src/assets/images/svgSkills/js.svg",
+    img: `${js}`,
   },
   {
     name: "React",
-    img: "/src/assets/images/svgSkills/react.svg",
+    img: `${react}`,
   },
   {
     name: "NodeJS",
-    img: "/src/assets/images/svgSkills/Vector.svg",
+    img: `${node}`,
   },
   {
     name: "Express",
-    img: "https://firebasestorage.googleapis.com/v0/b/portfoliojavierperez.appspot.com/o/iconsSVG%2Fexpress.svg?alt=media&token=5e5beb9d-c88d-46f7-9102-1a94baf36d8c",
+    img: `${express}`,
   },
   {
     name: "MongoDB",
-    img: "/src/assets/images/svgSkills/mongo.svg",
+    img: `${mongo}`,
   },
   {
     name: "Git",
-    img: "/src/assets/images/svgSkills/git.svg",
+    img: `${git}`,
   },
   {
     name: "Sass",
-    img: "/src/assets/images/svgSkills/sass.svg",
+    img: `${sass}`,
   },
   {
     name: "Bootstrap",
-    img: "/src/assets/images/svgSkills/bootstrap.svg",
+    img: `${bootstrap}`,
   },
   {
     name: "EJS",
-    img: "/src/assets/images/svgSkills/ejs.svg",
+    img: `${ejs}`,
   },
   {
     name: "Firebase",
-    img: "/src/assets/images/svgSkills/firebase.svg",
+    img: `${firebase}`,
   },
   {
     name: "MaterialUI",
-    img: "/src/assets/images/svgSkills/materialUI.svg",
+    img: `${materialUI}`,
   },
   {
     name: "MySQL",
-    img: "/src/assets/images/svgSkills/mySql.svg",
+    img: `${mySQL}`,
   },
 ];
 

@@ -318,7 +318,7 @@
       img {
         filter: grayscale(100%);
         &:hover {
-          transition: transform 0.8s;
+          transition: transform 0.5s;
           transform: scale(1.2);
           filter: none;
         }
