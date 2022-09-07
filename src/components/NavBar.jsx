@@ -4,6 +4,7 @@ import useToggle from "../customHooks/useToggle";
 import Close from "./Close";
 import { Link } from "react-router-dom";
 
+
 function NavBar() {
   const [value, toggleValue] = useToggle(false);
 
@@ -15,6 +16,7 @@ function NavBar() {
       <div className={`${value ? "navBarBlur" : ""}`}>
         <nav className={`navBarContainer ${value ? "show" : "hide"}`}>
           <Close toggleValue={toggleValue} />
+       
           <Link to="/home">
             <img className="logo" src={logo} alt="logo" />
           </Link>

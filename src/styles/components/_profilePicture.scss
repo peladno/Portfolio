@@ -9,7 +9,7 @@
     border: 6px solid black;
     z-index: 2;
   }
-  div{
+  div {
     @include flex-box(row, center, center);
     position: relative;
     left: -20px;
@@ -17,7 +17,9 @@
   div::before {
     margin-top: 2rem;
     margin-bottom: 2rem;
-    content: "こんにちは    世界の皆さん";
+    content: "こんにちは 世界の皆さん";
+    word-break: keep-all;
+    white-space: wrap;
     text-shadow: $title-shadow 6px 2px;
     writing-mode: vertical-rl;
     text-orientation: upright;
@@ -27,7 +29,7 @@
     font-weight: bold;
     background-image: $wallpaper;
     background-color: $tertiary;
-    padding: 0.3rem 0.8rem 0.3rem 0rem;
+    padding: 0.3rem 0.3rem 0.3rem 0rem;
     border-radius: 0.5rem;
     border: 5px solid $secondary;
     position: relative;

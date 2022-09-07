@@ -1,4 +1,4 @@
-//colors
+//light colors
 $primary: rgba(22, 83, 107, 1);
 $secondary: rgba(237, 60, 31, 1);
 $tertiary: rgba(234, 224, 205, 1);
@@ -7,6 +7,17 @@ $quaternary-trans: rgba(195, 185, 166, 0.435);
 $color-font: rgba(0, 0, 0, 1);
 $title-shadow: rgba(237, 58, 31, 0.46);
 $water-stamp: rgba(195, 185, 166, 0.5);
+
+//dark colors
+
+$primary-dark:#272525;
+$secondary-dark:#D85243;
+$tertiary-dark: #5F5B5B;
+$quaternary-dark: #394A6F;
+$color-font-dark: #F5ECD1;
+$line-dark: #D7A746;
+$title-shadow-dark: rgba(0, 0, 0, 0.25);
+
 
 //padding and margins sizes
 $padding-border: 5rem;
