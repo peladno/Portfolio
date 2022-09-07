@@ -7,7 +7,7 @@ function Index() {
     <>
       <main className="indexMain">
         <img src={indexLogo} alt="" />
-        <Link to="/home">
+        <Link to="/home" style={{ textDecoration: 'none' }}>
           <Button type="button" buttonStyle="btn--index" buttonSize="btn--medium">Enter</Button>
         </Link>
       </main>
