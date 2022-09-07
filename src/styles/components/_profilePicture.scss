@@ -4,9 +4,9 @@
   //height: 45vh;
   @include flex-box(column, center, center);
   img {
-    width: 50vw;
-    border-radius: 60%;
-    outline:6px solid black;
+    width: 55vw;
+    border-radius: 50%;
+    border: 6px solid black;
     z-index: 2;
   }
   div{
