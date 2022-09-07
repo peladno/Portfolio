@@ -21,6 +21,9 @@
             @include flex-box(row, flex-end, flex-end);
             li{
                 padding-left:.5rem;
+                img {
+                    fill: aqua;
+                }
             }
         }
     }

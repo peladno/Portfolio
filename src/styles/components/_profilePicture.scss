@@ -1,10 +1,10 @@
 .pictureContainer {
   width: 100vw;
   background-color: $quaternary;
-  height: 45vh;
+  //height: 45vh;
   @include flex-box(column, center, center);
   img {
-    width: 50%;
+    width: 50vw;
     border-radius: 60%;
     outline:6px solid black;
     z-index: 2;
@@ -15,13 +15,15 @@
     left: -20px;
   }
   div::before {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     content: "こんにちは 世界の皆さん";
     text-shadow: $title-shadow 6px 2px;
     writing-mode: vertical-rl;
     text-orientation: upright;
     color: $color-font;
-    font-size: 2.5rem;
-    height: 15rem;
+    font-size: 3rem;
+    height: 20rem;
     font-weight: bold;
     background-image: $wallpaper;
     background-color: $tertiary;

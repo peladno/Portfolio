@@ -1,0 +1,7 @@
+.notFoundMain {
+    height: $desktop-height;
+    @include flex-box(flex, center, center);
+    .luckyCat {
+        width: 20vw;
+    }
+}

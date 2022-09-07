@@ -1,6 +1,6 @@
 .experienceMain {
   min-height: $desktop-height;
-  background-image: url(/src/assets/images/daruma.svg);
+  background-image: url("./src/assets/images/daruma.svg");
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: 30%;
@@ -14,7 +14,7 @@
     p {
       font-size: 2rem;
       color: $color-font;
-      line-height: 30px;
+      line-height: 40px;
       text-align: center;
       margin: 3rem;
     }

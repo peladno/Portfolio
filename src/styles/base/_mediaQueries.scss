@@ -103,7 +103,9 @@
   }
   .pictureContainer {
     img {
-      width: 45%;
+      width: 45vw;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
     }
     div::before {
       font-size: 4rem;
@@ -288,7 +290,7 @@
     .about {
       p {
         font-size: $font-text-desktop;
-        line-height: 22px;
+        line-height: 25px;
       }
     }
 
@@ -296,6 +298,7 @@
       ul {
         li {
           font-size: $font-text-desktop;
+          line-height: 10px;
         }
       }
     }
@@ -394,7 +397,7 @@
   }
 
   .hide {
-    transform: translateX(350px);
+    transform: translateX(100%);
     transition: transform 0.3s;
   }
 
