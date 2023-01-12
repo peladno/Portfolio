@@ -11,11 +11,7 @@ function About() {
         <h1>About me</h1>
         <p>
           Pastry chef by profession who changed course to continue in the
-          programming area. At this moment I am studying the FullStack developer
-          career at the CoderHouse academy, managing HTML, CSS (SASS) and
-          programming languages such as: Javascript and ReactJS. Right now I'm
-          taking the BackEnd course learning Express JS, SQL, NodeJS, MongoDB,
-          course that ends in October, I am a person who loves to learn, I am
+          programming area. I am a driven and constantly evolving developer with experience in Javascript, React JS, React Native, MongoDB and Agile methodologies. I thrive in team environments and am always eager to learn and improve my skills to create high-quality and user-friendly solutions. I have a passion for building projects from the ground up and seeing them through to their final launch. I am looking for opportunities to apply my skills in a challenging and collaborative setting I am a person who loves to learn, I am
           responsible, self-taught and who knows how to work in a team. I'm
           bilingual, Spanish/English (IETLS 5.5) and curently learning Japanese.
         </p>
