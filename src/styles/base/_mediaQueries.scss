@@ -346,7 +346,6 @@
     .portfolioContainer {
       margin-top: 1.5rem;
       display: grid;
-      height: 100%;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       .divPortfolio {
         max-width: 18vw;
