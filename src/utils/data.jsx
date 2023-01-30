@@ -1,146 +1,164 @@
-import html from "../assets/images/svgSkills/html.svg";
-import sass from "../assets/images/svgSkills/sass.svg";
-import css from "../assets/images/svgSkills/css.svg";
-import node from "../assets/images/svgSkills/Vector.svg";
-import js from "../assets/images/svgSkills/js.svg";
-import mongo from "../assets/images/svgSkills/mongo.svg";
-import firebase from "../assets/images/svgSkills/firebase.svg";
-import git from "../assets/images/svgSkills/git.svg";
-import materialUI from "../assets/images/svgSkills/materialUI.svg";
-import mySQL from "../assets/images/svgSkills/mySql.svg";
-import express from "../assets/images/svgSkills/express.svg";
-import ejs from "../assets/images/svgSkills/ejs.svg";
-import bootstrap from "../assets/images/svgSkills/bootstrap.svg";
-import react from "../assets/images/svgSkills/react.svg";
+import html from '../assets/images/svgSkills/html.svg';
+import sass from '../assets/images/svgSkills/sass.svg';
+import css from '../assets/images/svgSkills/css.svg';
+import node from '../assets/images/svgSkills/Vector.svg';
+import js from '../assets/images/svgSkills/js.svg';
+import mongo from '../assets/images/svgSkills/mongo.svg';
+import firebase from '../assets/images/svgSkills/firebase.svg';
+import git from '../assets/images/svgSkills/git.svg';
+import materialUI from '../assets/images/svgSkills/materialUI.svg';
+import mySQL from '../assets/images/svgSkills/mySql.svg';
+import express from '../assets/images/svgSkills/express.svg';
+import ejs from '../assets/images/svgSkills/ejs.svg';
+import bootstrap from '../assets/images/svgSkills/bootstrap.svg';
+import react from '../assets/images/svgSkills/react.svg';
+import redux from '../assets/images/svgSkills/redux.svg';
+import sqlite from '../assets/images/svgSkills/sqlite.svg';
+import expo from '../assets/images/svgSkills/expo-1.svg';
+import docker from '../assets/images/svgSkills/docker.svg';
 
-import eshop from "../assets/images/portfolio/eshop.webp"
-import challenges from "../assets/images/portfolio/challenge.webp"
-import clubarduino from "../assets/images/portfolio/clubarduino.webp"
-import portfolioImg from "../assets/images/portfolio/portfolio.webp"
-import recipes from "../assets/images/portfolio/recipes.webp"
+import eshop from '../assets/images/portfolio/Eshop.png';
+import portfolioImg from '../assets/images/portfolio/portfolio.png';
+import recipes from '../assets/images/portfolio/recipes.png';
+import appInventory from '../assets/images/portfolio/inventoryapp.png';
+import devsafio from '../assets/images/portfolio/devsafio.png';
 
 export const portfolio = [
   {
     id: 1,
-    name: "Club Arduino",
+    name: 'Inventory mobile app',
     description:
-      "First project made for my class of web development. Simple static website for a existing club",
-    skills: ["HTML", "Bootstrap", "CSS", "Sass"],
-    img: `${clubarduino}`,
-    web: "https://peladno.github.io/club-arduino/index.html",
-    github: "https://github.com/peladno/club-arduino",
+      'React native project, managing local data and firebase auth, using expo',
+    skills: ['React', 'Redux', 'Expo', 'Sqlite'],
+    img: `${appInventory}`,
+    web: 'https://github.com/peladno/inventory-reactNativeApp',
+    github: 'https://github.com/peladno/inventory-reactNativeApp',
   },
   {
     id: 2,
-    name: "Recipe generator",
+    name: 'Recipe generator',
     description:
-      "Second project, for my class of JavaScript, Using almost all Vanilla JS and a bit of Bootstrap",
-    skills: ["HTML", "CSS", "Sass", "JavaScript", "Bootstrap"],
+      'Second project, for my class of JavaScript, Using almost all Vanilla JS and a bit of Bootstrap',
+    skills: ['HTML', 'CSS', 'Sass', 'JavaScript', 'Bootstrap'],
     img: `${recipes}`,
-    web: "https://peladno.github.io/JS28160JavierPerez/",
-    github: "https://github.com/peladno/JS28160JavierPerez",
+    web: 'https://peladno.github.io/JS28160JavierPerez/',
+    github: 'https://github.com/peladno/JS28160JavierPerez',
   },
   {
     id: 3,
-    name: "E-commerce",
+    name: 'E-commerce',
     description:
-      "Third project for my class of React JS, using Firebase as a database (just to alocate products infomation)",
-    skills: ["HTML", "CSS", "React", "Firebase", "MaterialUI"],
+      'Project using React to the frontend, Node js (Express) for the backend and MongoDb as database',
+    skills: ['CSS', 'React', 'MongoDB', 'MaterialUI', 'EJS', 'Express','NodeJS'],
     img: `${eshop}`,
-    web: "https://javierperezreact31140.web.app/",
-    github: "https://github.com/peladno/JavierPerezReact31140",
+    web: 'https://javierperezreact31140.web.app/',
+    github: 'https://github.com/peladno/eshop-project',
   },
   {
     id: 4,
-    name: "BackEnd challenges",
-    description: "All the challenges I made for my class of BackEnd",
-    skills: ["HTML", "CSS", "NodeJS", "Express", "MongoDB", "MySQL", "EJS"],
-    img: `${challenges}`,
-    github: "https://github.com/peladno/backendExpress",
+    name: 'DevSafio',
+    description:
+      "Project for the company 'DevSafio', using React at the front end, Node js at the backend and Sql as database",
+    skills: ['React', 'Docker'],
+    img: `${devsafio}`,
+    github: 'https://github.com/dlab-team/c6-frontend',
   },
   {
     id: 5,
-    name: "Portfolio",
-    description: "This portfolio",
-    skills: ["HTML", "CSS", "Sass", "React", "NodeJS", "Express"],
+    name: 'Portfolio',
+    description: 'This portfolio',
+    skills: ['HTML', 'CSS', 'Sass', 'React', 'NodeJS', 'Express'],
     img: `${portfolioImg}`,
-    github: "https://github.com/peladno/portfolio",
+    github: 'https://github.com/peladno/portfolio',
   },
 ];
 
 export const skills = [
   {
-    name: "HTML",
+    name: 'HTML',
     img: `${html}`,
   },
   {
-    name: "CSS",
+    name: 'CSS',
     img: `${css}`,
   },
   {
-    name: "JavaScript",
+    name: 'JavaScript',
     img: `${js}`,
   },
   {
-    name: "React",
+    name: 'React',
     img: `${react}`,
   },
   {
-    name: "NodeJS",
+    name: 'NodeJS',
     img: `${node}`,
   },
   {
-    name: "Express",
+    name: 'Express',
     img: `${express}`,
   },
   {
-    name: "MongoDB",
+    name: 'MongoDB',
     img: `${mongo}`,
   },
   {
-    name: "Git",
+    name: 'Git',
     img: `${git}`,
   },
   {
-    name: "Sass",
+    name: 'Sass',
     img: `${sass}`,
   },
   {
-    name: "Bootstrap",
+    name: 'Bootstrap',
     img: `${bootstrap}`,
   },
   {
-    name: "EJS",
+    name: 'EJS',
     img: `${ejs}`,
   },
   {
-    name: "Firebase",
+    name: 'Firebase',
     img: `${firebase}`,
   },
   {
-    name: "MaterialUI",
+    name: 'MaterialUI',
     img: `${materialUI}`,
   },
   {
-    name: "MySQL",
+    name: 'MySQL',
     img: `${mySQL}`,
   },
+  {
+    name: 'Sqlite',
+    img: `${sqlite}`,
+  },
+  {
+    name: 'Expo',
+    img: `${expo}`,
+  },
+  {
+    name: 'Redux',
+    img: `${redux}`,
+  },
+  { name: 'Docker', img: `${docker}` },
 ];
 
 export const certificates = [
   {
-    name: "Web developer",
-    credential_id: "61ea1117c4fb9f0068cfeedd",
-    url: "https://www.coderhouse.cl/certificados/61ea1117c4fb9f0068cfeedd?lang=en",
+    name: 'Web developer',
+    credential_id: '61ea1117c4fb9f0068cfeedd',
+    url: 'https://www.coderhouse.cl/certificados/61ea1117c4fb9f0068cfeedd?lang=en',
   },
   {
-    name: "JavaScript",
-    credential_id: "625c73a7e3d8ac00241d5fcf",
-    url: "https://www.coderhouse.cl/certificados/625c73a7e3d8ac00241d5fcf?lang=en",
+    name: 'JavaScript',
+    credential_id: '625c73a7e3d8ac00241d5fcf',
+    url: 'https://www.coderhouse.cl/certificados/625c73a7e3d8ac00241d5fcf?lang=en',
   },
   {
-    name: "React JS",
-    credential_id: "62985811e77324001ad49bc5",
-    url: "https://www.coderhouse.cl/certificados/62985811e77324001ad49bc5?lang=en",
+    name: 'React JS',
+    credential_id: '62985811e77324001ad49bc5',
+    url: 'https://www.coderhouse.cl/certificados/62985811e77324001ad49bc5?lang=en',
   },
 ];
