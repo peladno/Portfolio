@@ -49,9 +49,17 @@ export const portfolio = [
     name: 'E-commerce',
     description:
       'Project using React to the frontend, Node js (Express) for the backend and MongoDb as database',
-    skills: ['CSS', 'React', 'MongoDB', 'MaterialUI', 'EJS', 'Express','NodeJS'],
+    skills: [
+      'CSS',
+      'React',
+      'MongoDB',
+      'MaterialUI',
+      'EJS',
+      'Express',
+      'NodeJS',
+    ],
     img: `${eshop}`,
-    web: 'https://javierperezreact31140.web.app/',
+    web: 'https://eshop-project.onrender.com',
     github: 'https://github.com/peladno/eshop-project',
   },
   {
@@ -69,6 +77,7 @@ export const portfolio = [
     description: 'This portfolio',
     skills: ['HTML', 'CSS', 'Sass', 'React', 'NodeJS', 'Express'],
     img: `${portfolioImg}`,
+    we: 'https://portfoliojavierperez.web.app/',
     github: 'https://github.com/peladno/portfolio',
   },
 ];
