@@ -59,7 +59,7 @@ export const portfolio = [
       'NodeJS',
     ],
     img: `${eshop}`,
-    web: 'https://eshop-project.onrender.com',
+    web: 'https://eshop-project-29f5e.web.app/',
     github: 'https://github.com/peladno/eshop-project',
   },
   {
@@ -77,7 +77,7 @@ export const portfolio = [
     description: 'This portfolio',
     skills: ['HTML', 'CSS', 'Sass', 'React', 'NodeJS', 'Express'],
     img: `${portfolioImg}`,
-    we: 'https://portfoliojavierperez.web.app/',
+    web: 'https://portfoliojavierperez.web.app/',
     github: 'https://github.com/peladno/portfolio',
   },
 ];
