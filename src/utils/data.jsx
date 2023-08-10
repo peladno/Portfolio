@@ -16,6 +16,8 @@ import redux from '../assets/images/svgSkills/redux.svg';
 import sqlite from '../assets/images/svgSkills/sqlite.svg';
 import expo from '../assets/images/svgSkills/expo-1.svg';
 import docker from '../assets/images/svgSkills/docker.svg';
+import kotlin from '../assets/images/svgSkills/icons8-kotlin-240.svg';
+import java from '../assets/images/svgSkills/icons8-logotipo-de-java-coffee-cup-240.svg';
 
 import eshop from '../assets/images/portfolio/Eshop.png';
 import portfolioImg from '../assets/images/portfolio/portfolio.png';
@@ -152,6 +154,8 @@ export const skills = [
     img: `${redux}`,
   },
   { name: 'Docker', img: `${docker}` },
+  { name: 'Kotlin', img: `${kotlin}` },
+  { name: 'Java', img: `${java}` },
 ];
 
 export const certificates = [
@@ -169,5 +173,25 @@ export const certificates = [
     name: 'React JS',
     credential_id: '62985811e77324001ad49bc5',
     url: 'https://www.coderhouse.cl/certificados/62985811e77324001ad49bc5?lang=en',
+  },
+];
+
+export const experience = [
+  {
+    title: '12/2022 - 02/2023',
+    cardTitle: 'Frontent Developer',
+    cardDetailedText: `Developer for an incubator project, web platform for junior developers looking for work (Devsafio).
+    Tasks focused on the FrontEnd and its architecture development, agile methodologies such as Scrum and Jira software are used for its management.
+    \n
+    Skills: Jira · Scrum · React.js · Git`,
+  },
+  {
+    title: '03/2023 - 08/2023',
+    cardTitle: 'Mobile developer',
+    cardDetailedText: `Developing, testing, and maintaining the mobile app cross platform. My responsibilities include writing clean and maintainable code, collaborating with cross-functional teams to design and implement new features, and ensuring the performance, quality, and responsiveness of the mobile applications.
+
+    Building user interfaces, integrating APIs, and using third-party libraries and tools.Alseo debugging, optimizing, and resolving technical issues and bugs 
+    \n
+    Skills: React Js · Trello · Redux.js · React Native · GitHub · Git`,
   },
 ];

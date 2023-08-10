@@ -32,7 +32,7 @@
         border-bottom: none;
 
         &:after {
-          content: "";
+          content: '';
           position: absolute;
           width: 100%;
           transform: scaleX(1);
@@ -253,7 +253,7 @@
   }
   //title
   .title {
-    background-image: url("/src/assets/images/mountFuji.svg");
+    background-image: url('/src/assets/images/mountFuji.svg');
   }
 
   //footer
@@ -318,6 +318,9 @@
     .experienceContainer {
       min-height: 60vh;
     }
+  }
+  .timeline {
+    height: 30rem;
   }
 
   //skills

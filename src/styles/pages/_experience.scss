@@ -8,15 +8,18 @@
     min-height: 65vh;
     @include flex-box(column, center, center);
     h2 {
-      font-size: 3rem;
+      // font-size: 3rem;
       color: $primary;
     }
-    p {
-      font-size: 2rem;
-      color: $color-font;
-      line-height: 40px;
-      text-align: center;
-      margin: 3rem;
-    }
   }
+}
+
+.timeline {
+  width: 100%;
+  height: 40rem;
+  padding-top: 2rem;
+}
+
+.cjXPf {
+  font-size: 0.7rem !important;
 }
