@@ -21,7 +21,6 @@
       @include flex-box(row, center, center);
       list-style: none;
       li {
-        color: $tertiary;
         margin-left: $margin-links-menu;
         margin-right: $margin-links-menu;
         margin-top: none;
@@ -50,6 +49,21 @@
         }
       }
     }
+
+    .drk-navBarLinks li {
+      border-bottom: none !important;
+      &:after {
+        background-color: $line-dark !important;
+      }
+    }
+  }
+
+  .darkmode-switch {
+    position: relative;
+    top: 0.6rem;
+    right: 1rem;
+    margin-left: 1.5rem;
+    display: block;
   }
 
   .hide {
@@ -188,10 +202,16 @@
         h2 {
           font-size: 1.5rem;
         }
-        .portfolioImg {
-          width: 100%;
-          height: 130px;
+
+        .img-container {
+          height: 10rem;
         }
+        // .portfolioImg {
+        //   width: 100%;
+        //   height: 100%;
+        //   object-fit: cover;
+        //   // height: 9rem;
+        // }
         .imgSkills {
           img {
             width: 2vw;

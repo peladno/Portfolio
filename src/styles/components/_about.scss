@@ -5,8 +5,7 @@
     h1 {
       font-size: $font-title;
       color: $primary;
-      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
       padding-bottom: 0.3rem;
       padding-right: 3rem;
       border-bottom: 3px solid $secondary;
@@ -16,15 +15,25 @@
       font-size: $font-text;
       color: $color-font;
       line-height: 30px;
-      text-align: justify;
     }
   }
+
+  .drk-about {
+    h1 {
+      color: $primary-dark;
+      border-bottom: 3px solid $line-dark;
+    }
+    p {
+      color: $font-dark;
+    }
+  }
+
   .certifications {
     @include flex-box(column, center, center);
     h2 {
       font-size: $font-title2;
       color: $primary;
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
       padding-left: 1rem;
       padding-right: 1rem;
       padding-bottom: 0.3rem;
@@ -33,7 +42,7 @@
       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
     }
     ul {
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
       li {
         font-size: $font-text;
         color: $color-font;
@@ -41,7 +50,7 @@
         list-style-type: circle;
         text-align: center;
         list-style: none;
-        padding-bottom: .3rem;
+        padding-bottom: 0.3rem;
         line-height: 30px;
         a {
           color: $secondary;

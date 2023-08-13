@@ -1,0 +1,73 @@
+.divPortfolio {
+  width: 100vw;
+  padding: 2rem;
+  @include flex-box(column, center, center);
+
+  h2 {
+    font-size: $font-title2;
+    color: $primary;
+  }
+  .img-container {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    position: relative;
+    height: 12rem;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #ccc;
+  }
+
+  .portfolioImg {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border: 4px solid $color-font;
+    border-radius: 5px;
+  }
+  .imgSkills {
+    width: 100%;
+    height: 2rem;
+
+    @include flex-box(row, center, flex-start);
+    img {
+      width: 10vw;
+      padding-right: 0.5rem;
+    }
+  }
+  .itemDescription {
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    text-align: justify;
+    line-height: 20px;
+    height: 20%;
+  }
+  .divButtons {
+    width: 100%;
+    @include flex-box(row, center, space-around);
+  }
+}
+
+.pulse {
+  animation: pulse 1.4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+.loadable {
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 0 auto;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+.drk-item-portfolio-title {
+  color: $font-dark !important;
+}

@@ -33,7 +33,7 @@ export const portfolio = [
       'React native project, managing local data and firebase auth, using expo',
     skills: ['React', 'Redux', 'Expo', 'Sqlite'],
     img: `${appInventory}`,
-    web: 'https://github.com/peladno/inventory-reactNativeApp',
+    // web: 'https://github.com/peladno/inventory-reactNativeApp',
     github: 'https://github.com/peladno/inventory-reactNativeApp',
   },
   {

@@ -8,7 +8,6 @@
   right: 0;
   padding-top: 10vh;
 
-
   @include flex-box(column, center, flex-start);
   .logo {
     width: 35vw;
@@ -23,4 +22,17 @@
       border-bottom: 2px solid $secondary;
     }
   }
+
+  .drk-navBarLinks li {
+    color: $font-dark !important;
+    border-bottom: 2px solid $line-dark !important;
+  }
+}
+
+.darkmode-switch {
+  display: none;
+}
+
+.drk-navBar {
+  background-color: $primary-dark;
 }

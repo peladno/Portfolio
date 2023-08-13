@@ -5,12 +5,7 @@ import { experience } from '../utils/data';
 
 function Experience() {
   return (
-    <motion.main
-      className='experienceMain'
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-    >
+    <main key='experience' className='experienceMain'>
       <Title>Experience</Title>
       <div className='experienceContainer'>
         {/* <h2>Error 404</h2>
@@ -30,7 +25,7 @@ function Experience() {
           />
         </div>
       </div>
-    </motion.main>
+    </main>
   );
 }
 

@@ -1,13 +1,17 @@
 import Button from './Button';
 import Certifications from './Certifications';
 import { CV_URL } from '../API/URL';
+import { useContext, useEffect } from 'react';
+import { DarkModeContext } from '../context/ThemeContext';
 
 function About() {
+  const { darkMode } = useContext(DarkModeContext);
+
   const handleClick = () => window.open(`${CV_URL}`, '_blank');
 
   return (
     <div className='aboutContainer'>
-      <div className='about'>
+      <div className={`about ${darkMode && 'drk-about'}`}>
         <h1>About me</h1>
         <p>
           Pastry chef by profession who changed course to continue in the
@@ -20,8 +24,8 @@ function About() {
           final launch. I am looking for opportunities to apply my skills in a
           challenging and collaborative setting I am a person who loves to
           learn, I am responsible, self-taught and who knows how to work in a
-          team. I'm bilingual, Spanish/English (IETLS 5.5) and curently learning
-          Japanese.
+          team. I'm bilingual, Spanish/English (IETLS 5.5) and currently
+          learning Japanese.
         </p>
       </div>
       <div className='certifications'>
@@ -29,7 +33,7 @@ function About() {
         <Button
           type='button'
           onClick={handleClick}
-          buttonStyle='btn--primary'
+          buttonStyle={`${darkMode ? 'drk-btn--primary' : 'btn--primary'}`}
           buttonSize='btn--large'
         >
           Download CV

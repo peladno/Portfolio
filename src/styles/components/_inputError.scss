@@ -1,6 +1,10 @@
 .inputError {
-    color: $secondary;
-    font-size: .8rem;
-    display: inline-block;
-    font-weight: lighter;
+  color: $secondary;
+  font-size: 0.8rem;
+  display: inline-block;
+  font-weight: lighter;
+}
+
+.drk-inputError {
+  color: white !important;
 }

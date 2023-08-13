@@ -1,53 +1,55 @@
 import { useContext } from 'react';
+import { Link } from 'react-router-dom';
 import github from '../assets/images/github.svg';
 import linkedin from '../assets/images/linkedin.svg';
-import { Link } from 'react-router-dom';
+import { DarkModeContext } from '../context/ThemeContext';
 
 function Footer() {
+  const { darkMode } = useContext(DarkModeContext);
+
+  const footerContainerClass = `footerContainer ${
+    darkMode ? 'drk-footerContainer' : ''
+  }`;
+  const socialMediaClass = `socialMedia ${darkMode ? 'drk-socialMedia' : ''}`;
+
+  const footerLinks = [
+    { path: '/home', label: 'Home' },
+    { path: '/experience', label: 'Experience' },
+    { path: '/skills', label: 'Skills' },
+    { path: '/portfolio', label: 'Portfolio' },
+    { path: '/contact', label: 'Contact' },
+  ];
+
+  const socialMediaLinks = [
+    {
+      url: 'https://www.linkedin.com/in/javier-perez-u/',
+      icon: linkedin,
+      alt: 'LinkedIn',
+    },
+    { url: 'https://github.com/peladno', icon: github, alt: 'GitHub' },
+  ];
+
   return (
-    <>
-      <footer className='footerContainer'>
-        <div className='footerContent'>
-          <ul className='footerLinks'>
-            <li>
-              <Link to='/home'>Home</Link>
+    <footer className={footerContainerClass}>
+      <div className='footerContent'>
+        <ul className='footerLinks'>
+          {footerLinks.map(({ path, label }) => (
+            <li key={path}>
+              <Link to={path}>{label}</Link>
             </li>
-            <li>
-              <Link to='/experience'>Experience</Link>
-            </li>
-            <li>
-              <Link to='/skills'>Skills</Link>
-            </li>
-            <li>
-              <Link to='/portfolio'>Portfolio</Link>
-            </li>
-            <li>
-              <Link to='/contact'>Contact</Link>
-            </li>
-          </ul>
-          <ul className='socialMedia'>
-            <li>
-              <a
-                href='https://www.linkedin.com/in/javier-perez-u/'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <img src={linkedin} alt='linkein' />
+          ))}
+        </ul>
+        <ul className={socialMediaClass}>
+          {socialMediaLinks.map(({ url, icon, alt }) => (
+            <li key={url}>
+              <a href={url} target='_blank' rel='noopener noreferrer'>
+                <img src={icon} alt={alt} />
               </a>
             </li>
-            <li>
-              <a
-                href='https://github.com/peladno'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                <img src={github} alt='github' />
-              </a>
-            </li>
-          </ul>
-        </div>
-      </footer>
-    </>
+          ))}
+        </ul>
+      </div>
+    </footer>
   );
 }
 

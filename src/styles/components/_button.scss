@@ -3,14 +3,14 @@
   position: relative;
   height: 2.5rem;
   border-radius: 5px;
-  cursor: grab;
-  p{
+  cursor: pointer;
+  p {
     font-size: $font-text-mobile;
   }
 }
 
 .mainButton:after {
-  content: "";
+  content: '';
   position: absolute;
   width: 100%;
   top: 7px;
@@ -29,9 +29,8 @@
 
 .btn--index {
   background-color: $tertiary;
-  border: 1px solid $tertiary;
   &::after {
-    border: 1px solid $tertiary;
+    border: 1px solid $color-font;
   }
 }
 
@@ -40,6 +39,22 @@
   color: $tertiary;
   &::after {
     border: 1px solid $color-font;
+  }
+}
+
+.drk-btn--index {
+  background-color: $tertiary-dark;
+  color: $color-font-dark;
+  &::after {
+    border: 1px solid $color-font-dark;
+  }
+}
+
+.drk-btn--primary {
+  background-color: $secondary-dark;
+  color: $color-font-dark;
+  &::after {
+    border: 1px solid $color-font-dark;
   }
 }
 
@@ -54,6 +69,10 @@
 
 .btn--large {
   width: 10rem;
+}
+
+.disabled-button {
+  background-color: rgb(86, 86, 86);
 }
 
 @media (min-width: 728px) {

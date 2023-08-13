@@ -9,7 +9,7 @@ form {
       height: 6vh;
       background-color: $quaternary-trans;
       border-radius: 0.5rem;
-      padding: 0 .5rem;
+      padding: 0 0.5rem;
       border: 2px solid transparent;
       font-size: $font-title2;
       transition: border-color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s,
@@ -24,15 +24,16 @@ form {
       font-weight: bold;
       color: $primary;
       transition: color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s;
-      margin-top: .8rem;
+      margin-top: 0.8rem;
+      @include flex-box(row, center, space-between);
     }
     .inputMessage {
       height: 20vh;
       margin-bottom: 1rem;
     }
   }
-  svg{
-    margin-right: .3rem;
+  svg {
+    margin-right: 0.3rem;
   }
 }
 
@@ -46,4 +47,12 @@ form {
 .input:hover .label,
 .input:focus {
   color: #05060fc2;
+}
+
+.drk-label {
+  color: $primary-dark !important;
+}
+
+.dark-input {
+  background-color: $quaternary-trans-dark !important;
 }

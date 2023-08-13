@@ -1,10 +1,22 @@
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
-const STYLES = ["btn--index", "btn--primary"];
+const STYLES = [
+  'btn--index',
+  'btn--primary',
+  'drk-btn--index',
+  'drk-btn--primary',
+];
 
-const SIZE = ["btn--small", "btn--medium", "btn--large"];
+const SIZE = ['btn--small', 'btn--medium', 'btn--large'];
 
-function Button({ children, type, onClick, buttonSize, buttonStyle }) {
+function Button({
+  children,
+  type,
+  onClick,
+  buttonSize,
+  buttonStyle,
+  disabled,
+}) {
   const checkButtonStyles = STYLES.includes(buttonStyle)
     ? buttonStyle
     : STYLES[0];
@@ -13,7 +25,10 @@ function Button({ children, type, onClick, buttonSize, buttonStyle }) {
   return (
     <>
       <button
-        className={`mainButton ${checkButtonStyles} ${checkButtonSize}`}
+        disabled={disabled}
+        className={`mainButton ${checkButtonStyles} ${checkButtonSize} ${
+          disabled ? 'disabled-button' : ''
+        }`}
         type={type}
         onClick={onClick}
       >

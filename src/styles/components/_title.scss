@@ -3,9 +3,8 @@
   padding-top: 1.5rem;
   padding-bottom: 1rem;
   padding-left: $padding-mobile;
-  background-image: url("/src/assets/images/mountFuji.svg");
+  background-image: url('/src/assets/images/mountFuji.svg');
   background-repeat: no-repeat;
-  background-color: $quaternary;
   h1 {
     font-size: $font-title;
     color: $primary;
@@ -13,4 +12,9 @@
     padding-right: 2rem;
     border-bottom: 3px solid $secondary;
   }
+}
+
+.drk-title {
+  color: $primary-dark !important;
+  border-bottom: 3px solid $line-dark !important;
 }
