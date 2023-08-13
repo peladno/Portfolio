@@ -30,7 +30,12 @@
 }
 
 .darkmode-switch {
-  display: none;
+  // display: none;
+  position: absolute;
+  top: 5rem;
+  right: 1.65rem;
+  margin-left: 1.5rem;
+  display: block;
 }
 
 .drk-navBar {
