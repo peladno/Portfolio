@@ -22,7 +22,11 @@ function Experience() {
               titleColorActive: 'rgba(234, 224, 205, 1)',
               cardTitleColor: 'rgba(22, 83, 107, 1)',
             }}
-          />
+            fontSizes={{
+              title: '0.6rem',
+            }}
+            scrollable
+          ></Chrono>
         </div>
       </div>
     </main>

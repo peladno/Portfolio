@@ -4,7 +4,6 @@
   height: 2.5rem;
   border-radius: 5px;
   cursor: pointer;
-  color: $color-font;
   p {
     font-size: $font-text-mobile;
   }
@@ -30,6 +29,7 @@
 
 .btn--index {
   background-color: $tertiary;
+  color: $color-font;
   &::after {
     border: 1px solid $color-font;
   }
