@@ -5,33 +5,59 @@ import { useEffect } from 'react';
 import InputError from './InputError';
 import { SendEmail } from '../API/Api';
 import { DarkModeContext } from '../context/ThemeContext';
+import { ToastContainer, toast } from 'react-toastify';
 
 function ContactForm() {
+  const [error, setError] = useState('');
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [fullNameError, setFullNameError] = useState();
   const [emailError, setEmailError] = useState();
   const [messageError, setMessageError] = useState();
-  const [send, setSend] = useState();
   const { darkMode } = useContext(DarkModeContext);
-
   useEffect(() => {
     validateFullName({ fullName, setFullNameError });
     validateEmail({ email, setEmailError });
     validateMessage({ message, setMessageError });
-    if (send) {
-      setFullName('');
-      setEmail('');
-      setMessage('');
-      setSend();
-    }
-  }, [email, message, fullName, send]);
+  }, [email, message, fullName]);
 
-  const submitHandler = (e) => {
+  const submitHandler = async (e) => {
     e.preventDefault();
-    if (!fullNameError & !emailError & !messageError) {
-      SendEmail({ fullName, email, message, setSend });
+
+    if (!fullNameError && !emailError && !messageError) {
+      try {
+        const response = await SendEmail({ fullName, email, message });
+        if (response.status === 200) {
+          toast.success(`${response.data.message}`, {
+            position: 'top-right',
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: `${darkMode ? 'dark' : 'light'}`,
+          });
+          setFullName('');
+          setEmail('');
+          setMessage('');
+        } else {
+          toast.error(`${response.response.data.message}`, {
+            position: 'top-right',
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: `${darkMode ? 'dark' : 'light'}`,
+          });
+          toast.error('Error sending email. Please try again.');
+        }
+      } catch (error) {
+        console.log('An error occurred:', error);
+      }
     }
   };
 
