@@ -10,6 +10,7 @@
     "deploy": "firebase deploy"
   },
   "dependencies": {
+    "@amplitude/analytics-browser": "^2.2.0",
     "axios": "^0.27.2",
     "dotenv-expand": "^9.0.0",
     "framer-motion": "^7.2.1",
